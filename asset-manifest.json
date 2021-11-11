@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/EffyBuy/static/css/main.5d428d2f.chunk.css",
-    "main.js": "/EffyBuy/static/js/main.608c0798.chunk.js",
-    "main.js.map": "/EffyBuy/static/js/main.608c0798.chunk.js.map",
+    "main.js": "/EffyBuy/static/js/main.2a2e44b2.chunk.js",
+    "main.js.map": "/EffyBuy/static/js/main.2a2e44b2.chunk.js.map",
     "runtime-main.js": "/EffyBuy/static/js/runtime-main.3f318136.js",
     "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.3f318136.js.map",
     "static/css/2.40ff59d2.chunk.css": "/EffyBuy/static/css/2.40ff59d2.chunk.css",
@@ -62,6 +62,6 @@
     "static/css/2.40ff59d2.chunk.css",
     "static/js/2.b6c993c5.chunk.js",
     "static/css/main.5d428d2f.chunk.css",
-    "static/js/main.608c0798.chunk.js"
+    "static/js/main.2a2e44b2.chunk.js"
   ]
 }
