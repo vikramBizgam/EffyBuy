@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/EffyBuy/static/css/main.5d428d2f.chunk.css",
-    "main.js": "/EffyBuy/static/js/main.2a2e44b2.chunk.js",
-    "main.js.map": "/EffyBuy/static/js/main.2a2e44b2.chunk.js.map",
+    "main.js": "/EffyBuy/static/js/main.68c1258f.chunk.js",
+    "main.js.map": "/EffyBuy/static/js/main.68c1258f.chunk.js.map",
     "runtime-main.js": "/EffyBuy/static/js/runtime-main.3f318136.js",
     "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.3f318136.js.map",
     "static/css/2.40ff59d2.chunk.css": "/EffyBuy/static/css/2.40ff59d2.chunk.css",
@@ -43,6 +43,7 @@
     "static/media/about_us.124994e2.png": "/EffyBuy/static/media/about_us.124994e2.png",
     "static/media/affordable_price.9157ba05.svg": "/EffyBuy/static/media/affordable_price.9157ba05.svg",
     "static/media/anup_agarwal.a216f997.jpg": "/EffyBuy/static/media/anup_agarwal.a216f997.jpg",
+    "static/media/anytime_backup.e0736f6e.svg": "/EffyBuy/static/media/anytime_backup.e0736f6e.svg",
     "static/media/close-w.06aed37f.svg": "/EffyBuy/static/media/close-w.06aed37f.svg",
     "static/media/common_challenges.a9fe438a.png": "/EffyBuy/static/media/common_challenges.a9fe438a.png",
     "static/media/effybuy_logo_with_name.debce56c.png": "/EffyBuy/static/media/effybuy_logo_with_name.debce56c.png",
@@ -52,6 +53,7 @@
     "static/media/number_one_tool.61e3c641.jpg": "/EffyBuy/static/media/number_one_tool.61e3c641.jpg",
     "static/media/parthiban.a7080000.jpeg": "/EffyBuy/static/media/parthiban.a7080000.jpeg",
     "static/media/three_simple_tips.da928ca7.jpg": "/EffyBuy/static/media/three_simple_tips.da928ca7.jpg",
+    "static/media/transparency.c71300d9.svg": "/EffyBuy/static/media/transparency.c71300d9.svg",
     "static/media/unknown.2fda6558.png": "/EffyBuy/static/media/unknown.2fda6558.png",
     "static/media/webinar_automate_your.763a0223.jpg": "/EffyBuy/static/media/webinar_automate_your.763a0223.jpg",
     "static/media/witheffybuy.8661e8bf.jpg": "/EffyBuy/static/media/witheffybuy.8661e8bf.jpg",
@@ -62,6 +64,6 @@
     "static/css/2.40ff59d2.chunk.css",
     "static/js/2.b6c993c5.chunk.js",
     "static/css/main.5d428d2f.chunk.css",
-    "static/js/main.2a2e44b2.chunk.js"
+    "static/js/main.68c1258f.chunk.js"
   ]
 }
