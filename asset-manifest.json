@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/EffyBuy/static/css/main.5d428d2f.chunk.css",
-    "main.js": "/EffyBuy/static/js/main.d70bb741.chunk.js",
-    "main.js.map": "/EffyBuy/static/js/main.d70bb741.chunk.js.map",
+    "main.css": "/EffyBuy/static/css/main.81eb03fb.chunk.css",
+    "main.js": "/EffyBuy/static/js/main.1f462d4b.chunk.js",
+    "main.js.map": "/EffyBuy/static/js/main.1f462d4b.chunk.js.map",
     "runtime-main.js": "/EffyBuy/static/js/runtime-main.3f318136.js",
     "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.3f318136.js.map",
     "static/css/2.40ff59d2.chunk.css": "/EffyBuy/static/css/2.40ff59d2.chunk.css",
-    "static/js/2.b6c993c5.chunk.js": "/EffyBuy/static/js/2.b6c993c5.chunk.js",
-    "static/js/2.b6c993c5.chunk.js.map": "/EffyBuy/static/js/2.b6c993c5.chunk.js.map",
+    "static/js/2.c2b712f8.chunk.js": "/EffyBuy/static/js/2.c2b712f8.chunk.js",
+    "static/js/2.c2b712f8.chunk.js.map": "/EffyBuy/static/js/2.c2b712f8.chunk.js.map",
     "static/js/3.0688d032.chunk.js": "/EffyBuy/static/js/3.0688d032.chunk.js",
     "static/js/3.0688d032.chunk.js.map": "/EffyBuy/static/js/3.0688d032.chunk.js.map",
     "index.html": "/EffyBuy/index.html",
     "static/css/2.40ff59d2.chunk.css.map": "/EffyBuy/static/css/2.40ff59d2.chunk.css.map",
-    "static/css/main.5d428d2f.chunk.css.map": "/EffyBuy/static/css/main.5d428d2f.chunk.css.map",
-    "static/js/2.b6c993c5.chunk.js.LICENSE.txt": "/EffyBuy/static/js/2.b6c993c5.chunk.js.LICENSE.txt",
+    "static/css/main.81eb03fb.chunk.css.map": "/EffyBuy/static/css/main.81eb03fb.chunk.css.map",
+    "static/js/2.c2b712f8.chunk.js.LICENSE.txt": "/EffyBuy/static/js/2.c2b712f8.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/EffyBuy/static/media/shape12.8035974b.svg",
     "static/media/114.bba12bc5.svg": "/EffyBuy/static/media/114.bba12bc5.svg",
     "static/media/1621436901571.1fd701cd.png": "/EffyBuy/static/media/1621436901571.1fd701cd.png",
@@ -44,6 +44,7 @@
     "static/media/affordable_price.9157ba05.svg": "/EffyBuy/static/media/affordable_price.9157ba05.svg",
     "static/media/anup_agarwal.a216f997.jpg": "/EffyBuy/static/media/anup_agarwal.a216f997.jpg",
     "static/media/anytime_backup.e0736f6e.svg": "/EffyBuy/static/media/anytime_backup.e0736f6e.svg",
+    "static/media/automate.99b092ab.svg": "/EffyBuy/static/media/automate.99b092ab.svg",
     "static/media/close-w.06aed37f.svg": "/EffyBuy/static/media/close-w.06aed37f.svg",
     "static/media/common_challenges.a9fe438a.png": "/EffyBuy/static/media/common_challenges.a9fe438a.png",
     "static/media/effybuy_logo_with_name.debce56c.png": "/EffyBuy/static/media/effybuy_logo_with_name.debce56c.png",
@@ -56,14 +57,14 @@
     "static/media/transparency.c71300d9.svg": "/EffyBuy/static/media/transparency.c71300d9.svg",
     "static/media/unknown.2fda6558.png": "/EffyBuy/static/media/unknown.2fda6558.png",
     "static/media/webinar_automate_your.763a0223.jpg": "/EffyBuy/static/media/webinar_automate_your.763a0223.jpg",
-    "static/media/witheffybuy.8661e8bf.jpg": "/EffyBuy/static/media/witheffybuy.8661e8bf.jpg",
+    "static/media/witheffybuy.4351c55e.jpg": "/EffyBuy/static/media/witheffybuy.4351c55e.jpg",
     "static/media/withouteffybuy.c0d4a4a8.jpg": "/EffyBuy/static/media/withouteffybuy.c0d4a4a8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3f318136.js",
     "static/css/2.40ff59d2.chunk.css",
-    "static/js/2.b6c993c5.chunk.js",
-    "static/css/main.5d428d2f.chunk.css",
-    "static/js/main.d70bb741.chunk.js"
+    "static/js/2.c2b712f8.chunk.js",
+    "static/css/main.81eb03fb.chunk.css",
+    "static/js/main.1f462d4b.chunk.js"
   ]
 }
