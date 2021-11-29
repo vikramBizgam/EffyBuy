@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/EffyBuy/static/css/main.9b8ff326.chunk.css",
-    "main.js": "/EffyBuy/static/js/main.d002b47c.chunk.js",
-    "main.js.map": "/EffyBuy/static/js/main.d002b47c.chunk.js.map",
+    "main.js": "/EffyBuy/static/js/main.4b616086.chunk.js",
+    "main.js.map": "/EffyBuy/static/js/main.4b616086.chunk.js.map",
     "runtime-main.js": "/EffyBuy/static/js/runtime-main.3f318136.js",
     "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.3f318136.js.map",
     "static/css/2.40ff59d2.chunk.css": "/EffyBuy/static/css/2.40ff59d2.chunk.css",
@@ -49,6 +49,7 @@
     "static/media/close-w.06aed37f.svg": "/EffyBuy/static/media/close-w.06aed37f.svg",
     "static/media/common_challenges.a9fe438a.png": "/EffyBuy/static/media/common_challenges.a9fe438a.png",
     "static/media/effybuy_logo_with_name.debce56c.png": "/EffyBuy/static/media/effybuy_logo_with_name.debce56c.png",
+    "static/media/five_tips.0c46edc4.jpg": "/EffyBuy/static/media/five_tips.0c46edc4.jpg",
     "static/media/jebanesan.89ea8af7.jpg": "/EffyBuy/static/media/jebanesan.89ea8af7.jpg",
     "static/media/line-shape-2.84519b77.svg": "/EffyBuy/static/media/line-shape-2.84519b77.svg",
     "static/media/meghna_khatee.31564f51.webp": "/EffyBuy/static/media/meghna_khatee.31564f51.webp",
@@ -66,6 +67,6 @@
     "static/css/2.40ff59d2.chunk.css",
     "static/js/2.c2b712f8.chunk.js",
     "static/css/main.9b8ff326.chunk.css",
-    "static/js/main.d002b47c.chunk.js"
+    "static/js/main.4b616086.chunk.js"
   ]
 }
