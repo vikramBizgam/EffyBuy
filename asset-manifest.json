@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/EffyBuy/static/css/main.9b8ff326.chunk.css",
-    "main.js": "/EffyBuy/static/js/main.4b616086.chunk.js",
-    "main.js.map": "/EffyBuy/static/js/main.4b616086.chunk.js.map",
+    "main.css": "/EffyBuy/static/css/main.45fabf72.chunk.css",
+    "main.js": "/EffyBuy/static/js/main.acc6eebd.chunk.js",
+    "main.js.map": "/EffyBuy/static/js/main.acc6eebd.chunk.js.map",
     "runtime-main.js": "/EffyBuy/static/js/runtime-main.3f318136.js",
     "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.3f318136.js.map",
     "static/css/2.40ff59d2.chunk.css": "/EffyBuy/static/css/2.40ff59d2.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.0688d032.chunk.js.map": "/EffyBuy/static/js/3.0688d032.chunk.js.map",
     "index.html": "/EffyBuy/index.html",
     "static/css/2.40ff59d2.chunk.css.map": "/EffyBuy/static/css/2.40ff59d2.chunk.css.map",
-    "static/css/main.9b8ff326.chunk.css.map": "/EffyBuy/static/css/main.9b8ff326.chunk.css.map",
+    "static/css/main.45fabf72.chunk.css.map": "/EffyBuy/static/css/main.45fabf72.chunk.css.map",
     "static/js/2.c2b712f8.chunk.js.LICENSE.txt": "/EffyBuy/static/js/2.c2b712f8.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/EffyBuy/static/media/shape12.8035974b.svg",
     "static/media/114.bba12bc5.svg": "/EffyBuy/static/media/114.bba12bc5.svg",
@@ -55,6 +55,7 @@
     "static/media/meghna_khatee.31564f51.webp": "/EffyBuy/static/media/meghna_khatee.31564f51.webp",
     "static/media/number_one_tool.61e3c641.jpg": "/EffyBuy/static/media/number_one_tool.61e3c641.jpg",
     "static/media/parthiban.a7080000.jpeg": "/EffyBuy/static/media/parthiban.a7080000.jpeg",
+    "static/media/demoCaseStudy.css": "/EffyBuy/static/media/popup.c450f586.svg",
     "static/media/three_simple_tips.da928ca7.jpg": "/EffyBuy/static/media/three_simple_tips.da928ca7.jpg",
     "static/media/transparency.c71300d9.svg": "/EffyBuy/static/media/transparency.c71300d9.svg",
     "static/media/unknown.2fda6558.png": "/EffyBuy/static/media/unknown.2fda6558.png",
@@ -66,7 +67,7 @@
     "static/js/runtime-main.3f318136.js",
     "static/css/2.40ff59d2.chunk.css",
     "static/js/2.c2b712f8.chunk.js",
-    "static/css/main.9b8ff326.chunk.css",
-    "static/js/main.4b616086.chunk.js"
+    "static/css/main.45fabf72.chunk.css",
+    "static/js/main.acc6eebd.chunk.js"
   ]
 }
