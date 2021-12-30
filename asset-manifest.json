@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/EffyBuy/static/css/main.4f471af2.chunk.css",
+    "main.css": "/EffyBuy/static/css/main.bf0c3ad4.chunk.css",
     "main.js": "/EffyBuy/static/js/main.7053004c.chunk.js",
     "main.js.map": "/EffyBuy/static/js/main.7053004c.chunk.js.map",
     "runtime-main.js": "/EffyBuy/static/js/runtime-main.5c24f820.js",
@@ -12,7 +12,7 @@
     "static/js/3.17a5e101.chunk.js.map": "/EffyBuy/static/js/3.17a5e101.chunk.js.map",
     "index.html": "/EffyBuy/index.html",
     "static/css/2.40ff59d2.chunk.css.map": "/EffyBuy/static/css/2.40ff59d2.chunk.css.map",
-    "static/css/main.4f471af2.chunk.css.map": "/EffyBuy/static/css/main.4f471af2.chunk.css.map",
+    "static/css/main.bf0c3ad4.chunk.css.map": "/EffyBuy/static/css/main.bf0c3ad4.chunk.css.map",
     "static/js/2.4f6be0e6.chunk.js.LICENSE.txt": "/EffyBuy/static/js/2.4f6be0e6.chunk.js.LICENSE.txt",
     "static/media/01.7839d327.svg": "/EffyBuy/static/media/01.7839d327.svg",
     "static/media/02.759967ea.svg": "/EffyBuy/static/media/02.759967ea.svg",
@@ -84,7 +84,7 @@
     "static/js/runtime-main.5c24f820.js",
     "static/css/2.40ff59d2.chunk.css",
     "static/js/2.4f6be0e6.chunk.js",
-    "static/css/main.4f471af2.chunk.css",
+    "static/css/main.bf0c3ad4.chunk.css",
     "static/js/main.7053004c.chunk.js"
   ]
 }
