@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/EffyBuy/static/css/main.4f471af2.chunk.css",
-    "main.js": "/EffyBuy/static/js/main.4743e434.chunk.js",
-    "main.js.map": "/EffyBuy/static/js/main.4743e434.chunk.js.map",
+    "main.js": "/EffyBuy/static/js/main.7053004c.chunk.js",
+    "main.js.map": "/EffyBuy/static/js/main.7053004c.chunk.js.map",
     "runtime-main.js": "/EffyBuy/static/js/runtime-main.5c24f820.js",
     "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.5c24f820.js.map",
     "static/css/2.40ff59d2.chunk.css": "/EffyBuy/static/css/2.40ff59d2.chunk.css",
@@ -58,14 +58,14 @@
     "static/media/automate.99b092ab.svg": "/EffyBuy/static/media/automate.99b092ab.svg",
     "static/media/close-w.06aed37f.svg": "/EffyBuy/static/media/close-w.06aed37f.svg",
     "static/media/common_challenges.a9fe438a.png": "/EffyBuy/static/media/common_challenges.a9fe438a.png",
-    "static/media/effybuy vs erp-06.0e8ca148.png": "/EffyBuy/static/media/effybuy vs erp-06.0e8ca148.png",
+    "static/media/effybuy vs erp-06.ed7a968d.png": "/EffyBuy/static/media/effybuy vs erp-06.ed7a968d.png",
     "static/media/effybuy_logo_with_name.debce56c.png": "/EffyBuy/static/media/effybuy_logo_with_name.debce56c.png",
-    "static/media/feature-img-06.a31e1537.png": "/EffyBuy/static/media/feature-img-06.a31e1537.png",
-    "static/media/feature-img-07.fc910da6.png": "/EffyBuy/static/media/feature-img-07.fc910da6.png",
+    "static/media/feature-img-06.2c03ac7c.png": "/EffyBuy/static/media/feature-img-06.2c03ac7c.png",
+    "static/media/feature-img-07.210a8000.png": "/EffyBuy/static/media/feature-img-07.210a8000.png",
     "static/media/five_tips.0c46edc4.jpg": "/EffyBuy/static/media/five_tips.0c46edc4.jpg",
-    "static/media/funnel-01-01-01-01-01.97a93e96.png": "/EffyBuy/static/media/funnel-01-01-01-01-01.97a93e96.png",
     "static/media/funnel-08_.1a265ec1.png": "/EffyBuy/static/media/funnel-08_.1a265ec1.png",
     "static/media/funnel-09.64dfbc90.png": "/EffyBuy/static/media/funnel-09.64dfbc90.png",
+    "static/media/funnel.bcaac2a4.png": "/EffyBuy/static/media/funnel.bcaac2a4.png",
     "static/media/jebanesan.89ea8af7.jpg": "/EffyBuy/static/media/jebanesan.89ea8af7.jpg",
     "static/media/line-shape-2.84519b77.svg": "/EffyBuy/static/media/line-shape-2.84519b77.svg",
     "static/media/logistics-09.6c11df0e.png": "/EffyBuy/static/media/logistics-09.6c11df0e.png",
@@ -85,6 +85,6 @@
     "static/css/2.40ff59d2.chunk.css",
     "static/js/2.4f6be0e6.chunk.js",
     "static/css/main.4f471af2.chunk.css",
-    "static/js/main.4743e434.chunk.js"
+    "static/js/main.7053004c.chunk.js"
   ]
 }
