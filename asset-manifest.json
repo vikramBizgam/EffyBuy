@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/EffyBuy/static/css/main.6112105b.chunk.css",
-    "main.js": "/EffyBuy/static/js/main.c876b049.chunk.js",
-    "main.js.map": "/EffyBuy/static/js/main.c876b049.chunk.js.map",
+    "main.js": "/EffyBuy/static/js/main.4743e434.chunk.js",
+    "main.js.map": "/EffyBuy/static/js/main.4743e434.chunk.js.map",
     "runtime-main.js": "/EffyBuy/static/js/runtime-main.5c24f820.js",
     "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.5c24f820.js.map",
     "static/css/2.40ff59d2.chunk.css": "/EffyBuy/static/css/2.40ff59d2.chunk.css",
@@ -64,7 +64,7 @@
     "static/media/feature-img-07.fc910da6.png": "/EffyBuy/static/media/feature-img-07.fc910da6.png",
     "static/media/five_tips.0c46edc4.jpg": "/EffyBuy/static/media/five_tips.0c46edc4.jpg",
     "static/media/funnel-01-01-01-01-01.97a93e96.png": "/EffyBuy/static/media/funnel-01-01-01-01-01.97a93e96.png",
-    "static/media/funnel-08_.715fdcd1.png": "/EffyBuy/static/media/funnel-08_.715fdcd1.png",
+    "static/media/funnel-08_.1a265ec1.png": "/EffyBuy/static/media/funnel-08_.1a265ec1.png",
     "static/media/funnel-09.64dfbc90.png": "/EffyBuy/static/media/funnel-09.64dfbc90.png",
     "static/media/jebanesan.89ea8af7.jpg": "/EffyBuy/static/media/jebanesan.89ea8af7.jpg",
     "static/media/line-shape-2.84519b77.svg": "/EffyBuy/static/media/line-shape-2.84519b77.svg",
@@ -85,6 +85,6 @@
     "static/css/2.40ff59d2.chunk.css",
     "static/js/2.4f6be0e6.chunk.js",
     "static/css/main.6112105b.chunk.css",
-    "static/js/main.c876b049.chunk.js"
+    "static/js/main.4743e434.chunk.js"
   ]
 }
