@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/EffyBuy/static/css/main.bf0c3ad4.chunk.css",
-    "main.js": "/EffyBuy/static/js/main.ca35b804.chunk.js",
-    "main.js.map": "/EffyBuy/static/js/main.ca35b804.chunk.js.map",
+    "main.css": "/EffyBuy/static/css/main.f540641b.chunk.css",
+    "main.js": "/EffyBuy/static/js/main.bf08e002.chunk.js",
+    "main.js.map": "/EffyBuy/static/js/main.bf08e002.chunk.js.map",
     "runtime-main.js": "/EffyBuy/static/js/runtime-main.5c24f820.js",
     "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.5c24f820.js.map",
     "static/css/2.40ff59d2.chunk.css": "/EffyBuy/static/css/2.40ff59d2.chunk.css",
-    "static/js/2.4f6be0e6.chunk.js": "/EffyBuy/static/js/2.4f6be0e6.chunk.js",
-    "static/js/2.4f6be0e6.chunk.js.map": "/EffyBuy/static/js/2.4f6be0e6.chunk.js.map",
+    "static/js/2.9f79ac58.chunk.js": "/EffyBuy/static/js/2.9f79ac58.chunk.js",
+    "static/js/2.9f79ac58.chunk.js.map": "/EffyBuy/static/js/2.9f79ac58.chunk.js.map",
     "static/js/3.17a5e101.chunk.js": "/EffyBuy/static/js/3.17a5e101.chunk.js",
     "static/js/3.17a5e101.chunk.js.map": "/EffyBuy/static/js/3.17a5e101.chunk.js.map",
     "index.html": "/EffyBuy/index.html",
     "static/css/2.40ff59d2.chunk.css.map": "/EffyBuy/static/css/2.40ff59d2.chunk.css.map",
-    "static/css/main.bf0c3ad4.chunk.css.map": "/EffyBuy/static/css/main.bf0c3ad4.chunk.css.map",
-    "static/js/2.4f6be0e6.chunk.js.LICENSE.txt": "/EffyBuy/static/js/2.4f6be0e6.chunk.js.LICENSE.txt",
+    "static/css/main.f540641b.chunk.css.map": "/EffyBuy/static/css/main.f540641b.chunk.css.map",
+    "static/js/2.9f79ac58.chunk.js.LICENSE.txt": "/EffyBuy/static/js/2.9f79ac58.chunk.js.LICENSE.txt",
     "static/media/01.7839d327.svg": "/EffyBuy/static/media/01.7839d327.svg",
     "static/media/02.759967ea.svg": "/EffyBuy/static/media/02.759967ea.svg",
     "static/media/03.2886bb89.svg": "/EffyBuy/static/media/03.2886bb89.svg",
@@ -50,6 +50,7 @@
     "static/media/New_rfq-02_.a9e8255c.jpg": "/EffyBuy/static/media/New_rfq-02_.a9e8255c.jpg",
     "static/media/Procurement-09.5762f5fd.png": "/EffyBuy/static/media/Procurement-09.5762f5fd.png",
     "static/media/RFQ_BANNER-01-01.9ba185d9.png": "/EffyBuy/static/media/RFQ_BANNER-01-01.9ba185d9.png",
+    "static/media/Reverse_Auction.3d078d92.png": "/EffyBuy/static/media/Reverse_Auction.3d078d92.png",
     "static/media/Type_II.cd6318e6.svg": "/EffyBuy/static/media/Type_II.cd6318e6.svg",
     "static/media/about_us.124994e2.png": "/EffyBuy/static/media/about_us.124994e2.png",
     "static/media/affordable_price.9157ba05.svg": "/EffyBuy/static/media/affordable_price.9157ba05.svg",
@@ -67,6 +68,7 @@
     "static/media/funnel-09.64dfbc90.png": "/EffyBuy/static/media/funnel-09.64dfbc90.png",
     "static/media/funnel.bcaac2a4.png": "/EffyBuy/static/media/funnel.bcaac2a4.png",
     "static/media/jebanesan.89ea8af7.jpg": "/EffyBuy/static/media/jebanesan.89ea8af7.jpg",
+    "static/media/line-shape-1.00af60c5.svg": "/EffyBuy/static/media/line-shape-1.00af60c5.svg",
     "static/media/line-shape-2.84519b77.svg": "/EffyBuy/static/media/line-shape-2.84519b77.svg",
     "static/media/logistics-09.6c11df0e.png": "/EffyBuy/static/media/logistics-09.6c11df0e.png",
     "static/media/meghna_khatee.31564f51.webp": "/EffyBuy/static/media/meghna_khatee.31564f51.webp",
@@ -83,8 +85,8 @@
   "entrypoints": [
     "static/js/runtime-main.5c24f820.js",
     "static/css/2.40ff59d2.chunk.css",
-    "static/js/2.4f6be0e6.chunk.js",
-    "static/css/main.bf0c3ad4.chunk.css",
-    "static/js/main.ca35b804.chunk.js"
+    "static/js/2.9f79ac58.chunk.js",
+    "static/css/main.f540641b.chunk.css",
+    "static/js/main.bf08e002.chunk.js"
   ]
 }
