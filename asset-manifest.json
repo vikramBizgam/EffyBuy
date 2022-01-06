@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/EffyBuy/static/css/main.a91c1a05.chunk.css",
-    "main.js": "/EffyBuy/static/js/main.4a3a4811.chunk.js",
-    "main.js.map": "/EffyBuy/static/js/main.4a3a4811.chunk.js.map",
+    "main.css": "/EffyBuy/static/css/main.7aecb145.chunk.css",
+    "main.js": "/EffyBuy/static/js/main.ce1bacfe.chunk.js",
+    "main.js.map": "/EffyBuy/static/js/main.ce1bacfe.chunk.js.map",
     "runtime-main.js": "/EffyBuy/static/js/runtime-main.5c24f820.js",
     "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.5c24f820.js.map",
     "static/css/2.40ff59d2.chunk.css": "/EffyBuy/static/css/2.40ff59d2.chunk.css",
-    "static/js/2.1fa9fa8a.chunk.js": "/EffyBuy/static/js/2.1fa9fa8a.chunk.js",
-    "static/js/2.1fa9fa8a.chunk.js.map": "/EffyBuy/static/js/2.1fa9fa8a.chunk.js.map",
+    "static/js/2.38509c65.chunk.js": "/EffyBuy/static/js/2.38509c65.chunk.js",
+    "static/js/2.38509c65.chunk.js.map": "/EffyBuy/static/js/2.38509c65.chunk.js.map",
     "static/js/3.17a5e101.chunk.js": "/EffyBuy/static/js/3.17a5e101.chunk.js",
     "static/js/3.17a5e101.chunk.js.map": "/EffyBuy/static/js/3.17a5e101.chunk.js.map",
     "index.html": "/EffyBuy/index.html",
     "static/css/2.40ff59d2.chunk.css.map": "/EffyBuy/static/css/2.40ff59d2.chunk.css.map",
-    "static/css/main.a91c1a05.chunk.css.map": "/EffyBuy/static/css/main.a91c1a05.chunk.css.map",
-    "static/js/2.1fa9fa8a.chunk.js.LICENSE.txt": "/EffyBuy/static/js/2.1fa9fa8a.chunk.js.LICENSE.txt",
+    "static/css/main.7aecb145.chunk.css.map": "/EffyBuy/static/css/main.7aecb145.chunk.css.map",
+    "static/js/2.38509c65.chunk.js.LICENSE.txt": "/EffyBuy/static/js/2.38509c65.chunk.js.LICENSE.txt",
     "static/media/01.7839d327.svg": "/EffyBuy/static/media/01.7839d327.svg",
     "static/media/02.759967ea.svg": "/EffyBuy/static/media/02.759967ea.svg",
     "static/media/03.2886bb89.svg": "/EffyBuy/static/media/03.2886bb89.svg",
@@ -45,6 +45,7 @@
     "static/media/End_to_End.c2fdbffc.svg": "/EffyBuy/static/media/End_to_End.c2fdbffc.svg",
     "static/media/FirstPannel.ca479079.png": "/EffyBuy/static/media/FirstPannel.ca479079.png",
     "static/media/Get_on_boarding_less.b4f1eef3.svg": "/EffyBuy/static/media/Get_on_boarding_less.b4f1eef3.svg",
+    "static/media/Get_on_boarding_less_.111daf65.svg": "/EffyBuy/static/media/Get_on_boarding_less_.111daf65.svg",
     "static/media/Gif-Animation.71348fda.gif": "/EffyBuy/static/media/Gif-Animation.71348fda.gif",
     "static/media/Multi_level.5a3b15f3.svg": "/EffyBuy/static/media/Multi_level.5a3b15f3.svg",
     "static/media/New_rfq-02_.a9e8255c.jpg": "/EffyBuy/static/media/New_rfq-02_.a9e8255c.jpg",
@@ -85,8 +86,8 @@
   "entrypoints": [
     "static/js/runtime-main.5c24f820.js",
     "static/css/2.40ff59d2.chunk.css",
-    "static/js/2.1fa9fa8a.chunk.js",
-    "static/css/main.a91c1a05.chunk.css",
-    "static/js/main.4a3a4811.chunk.js"
+    "static/js/2.38509c65.chunk.js",
+    "static/css/main.7aecb145.chunk.css",
+    "static/js/main.ce1bacfe.chunk.js"
   ]
 }
