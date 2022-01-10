@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/EffyBuy/static/css/main.6d495814.chunk.css",
-    "main.js": "/EffyBuy/static/js/main.fb95271d.chunk.js",
-    "main.js.map": "/EffyBuy/static/js/main.fb95271d.chunk.js.map",
+    "main.js": "/EffyBuy/static/js/main.3f2000a6.chunk.js",
+    "main.js.map": "/EffyBuy/static/js/main.3f2000a6.chunk.js.map",
     "runtime-main.js": "/EffyBuy/static/js/runtime-main.5c24f820.js",
     "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.5c24f820.js.map",
     "static/css/2.40ff59d2.chunk.css": "/EffyBuy/static/css/2.40ff59d2.chunk.css",
@@ -57,7 +57,7 @@
     "static/media/RFQ_BANNER-01-01.9ba185d9.png": "/EffyBuy/static/media/RFQ_BANNER-01-01.9ba185d9.png",
     "static/media/RFQ_Screen.9dde93b5.png": "/EffyBuy/static/media/RFQ_Screen.9dde93b5.png",
     "static/media/Reports_.52caa292.png": "/EffyBuy/static/media/Reports_.52caa292.png",
-    "static/media/Reverse_Auction.04d89143.png": "/EffyBuy/static/media/Reverse_Auction.04d89143.png",
+    "static/media/Reverse_Auction.0ab73205.png": "/EffyBuy/static/media/Reverse_Auction.0ab73205.png",
     "static/media/Reverse_Auction.0c333253.svg": "/EffyBuy/static/media/Reverse_Auction.0c333253.svg",
     "static/media/Reverse_Auction_02.17d3152a.png": "/EffyBuy/static/media/Reverse_Auction_02.17d3152a.png",
     "static/media/Type_II.cd6318e6.svg": "/EffyBuy/static/media/Type_II.cd6318e6.svg",
@@ -97,6 +97,6 @@
     "static/css/2.40ff59d2.chunk.css",
     "static/js/2.7673f831.chunk.js",
     "static/css/main.6d495814.chunk.css",
-    "static/js/main.fb95271d.chunk.js"
+    "static/js/main.3f2000a6.chunk.js"
   ]
 }
