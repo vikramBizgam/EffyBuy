@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/EffyBuy/static/css/main.6d495814.chunk.css",
-    "main.js": "/EffyBuy/static/js/main.33e26412.chunk.js",
-    "main.js.map": "/EffyBuy/static/js/main.33e26412.chunk.js.map",
+    "main.js": "/EffyBuy/static/js/main.cd00ce36.chunk.js",
+    "main.js.map": "/EffyBuy/static/js/main.cd00ce36.chunk.js.map",
     "runtime-main.js": "/EffyBuy/static/js/runtime-main.5c24f820.js",
     "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.5c24f820.js.map",
     "static/css/2.40ff59d2.chunk.css": "/EffyBuy/static/css/2.40ff59d2.chunk.css",
@@ -86,6 +86,7 @@
     "static/media/number_one_tool.61e3c641.jpg": "/EffyBuy/static/media/number_one_tool.61e3c641.jpg",
     "static/media/parthiban.a7080000.jpeg": "/EffyBuy/static/media/parthiban.a7080000.jpeg",
     "static/media/demoCaseStudy.css": "/EffyBuy/static/media/popup.c450f586.svg",
+    "static/media/quick_auction.18ed3539.svg": "/EffyBuy/static/media/quick_auction.18ed3539.svg",
     "static/media/reports.cb47adeb.svg": "/EffyBuy/static/media/reports.cb47adeb.svg",
     "static/media/three_simple_tips.da928ca7.jpg": "/EffyBuy/static/media/three_simple_tips.da928ca7.jpg",
     "static/media/transparency.c71300d9.svg": "/EffyBuy/static/media/transparency.c71300d9.svg",
@@ -99,6 +100,6 @@
     "static/css/2.40ff59d2.chunk.css",
     "static/js/2.7673f831.chunk.js",
     "static/css/main.6d495814.chunk.css",
-    "static/js/main.33e26412.chunk.js"
+    "static/js/main.cd00ce36.chunk.js"
   ]
 }
