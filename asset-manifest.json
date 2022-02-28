@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/EffyBuy/static/css/main.ef12f95f.chunk.css",
-    "main.js": "/EffyBuy/static/js/main.a2c45385.chunk.js",
-    "main.js.map": "/EffyBuy/static/js/main.a2c45385.chunk.js.map",
-    "runtime-main.js": "/EffyBuy/static/js/runtime-main.54bab872.js",
-    "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.54bab872.js.map",
+    "main.js": "/EffyBuy/static/js/main.9c3ff372.chunk.js",
+    "main.js.map": "/EffyBuy/static/js/main.9c3ff372.chunk.js.map",
+    "runtime-main.js": "/EffyBuy/static/js/runtime-main.d43b06ca.js",
+    "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.d43b06ca.js.map",
     "static/css/2.40ff59d2.chunk.css": "/EffyBuy/static/css/2.40ff59d2.chunk.css",
-    "static/js/2.dffc498e.chunk.js": "/EffyBuy/static/js/2.dffc498e.chunk.js",
-    "static/js/2.dffc498e.chunk.js.map": "/EffyBuy/static/js/2.dffc498e.chunk.js.map",
-    "static/js/3.5965f8d4.chunk.js": "/EffyBuy/static/js/3.5965f8d4.chunk.js",
-    "static/js/3.5965f8d4.chunk.js.map": "/EffyBuy/static/js/3.5965f8d4.chunk.js.map",
+    "static/js/2.2a729711.chunk.js": "/EffyBuy/static/js/2.2a729711.chunk.js",
+    "static/js/2.2a729711.chunk.js.map": "/EffyBuy/static/js/2.2a729711.chunk.js.map",
+    "static/js/3.2696f998.chunk.js": "/EffyBuy/static/js/3.2696f998.chunk.js",
+    "static/js/3.2696f998.chunk.js.map": "/EffyBuy/static/js/3.2696f998.chunk.js.map",
     "index.html": "/EffyBuy/index.html",
     "static/css/2.40ff59d2.chunk.css.map": "/EffyBuy/static/css/2.40ff59d2.chunk.css.map",
     "static/css/main.ef12f95f.chunk.css.map": "/EffyBuy/static/css/main.ef12f95f.chunk.css.map",
-    "static/js/2.dffc498e.chunk.js.LICENSE.txt": "/EffyBuy/static/js/2.dffc498e.chunk.js.LICENSE.txt",
+    "static/js/2.2a729711.chunk.js.LICENSE.txt": "/EffyBuy/static/js/2.2a729711.chunk.js.LICENSE.txt",
     "static/media/01.7839d327.svg": "/EffyBuy/static/media/01.7839d327.svg",
     "static/media/02.759967ea.svg": "/EffyBuy/static/media/02.759967ea.svg",
     "static/media/03.2886bb89.svg": "/EffyBuy/static/media/03.2886bb89.svg",
@@ -112,10 +112,10 @@
     "static/media/withouteffybuy.c0d4a4a8.jpg": "/EffyBuy/static/media/withouteffybuy.c0d4a4a8.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.54bab872.js",
+    "static/js/runtime-main.d43b06ca.js",
     "static/css/2.40ff59d2.chunk.css",
-    "static/js/2.dffc498e.chunk.js",
+    "static/js/2.2a729711.chunk.js",
     "static/css/main.ef12f95f.chunk.css",
-    "static/js/main.a2c45385.chunk.js"
+    "static/js/main.9c3ff372.chunk.js"
   ]
 }
