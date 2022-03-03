@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/EffyBuy/static/css/main.ef12f95f.chunk.css",
-    "main.js": "/EffyBuy/static/js/main.380973bb.chunk.js",
-    "main.js.map": "/EffyBuy/static/js/main.380973bb.chunk.js.map",
+    "main.js": "/EffyBuy/static/js/main.8a496fb2.chunk.js",
+    "main.js.map": "/EffyBuy/static/js/main.8a496fb2.chunk.js.map",
     "runtime-main.js": "/EffyBuy/static/js/runtime-main.d43b06ca.js",
     "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.d43b06ca.js.map",
     "static/css/2.40ff59d2.chunk.css": "/EffyBuy/static/css/2.40ff59d2.chunk.css",
@@ -81,7 +81,7 @@
     "static/media/Reverse_Auctionn.04d89143.png": "/EffyBuy/static/media/Reverse_Auctionn.04d89143.png",
     "static/media/Type_II.cd6318e6.svg": "/EffyBuy/static/media/Type_II.cd6318e6.svg",
     "static/media/about_us.124994e2.png": "/EffyBuy/static/media/about_us.124994e2.png",
-    "static/media/affordable_price.9157ba05.svg": "/EffyBuy/static/media/affordable_price.9157ba05.svg",
+    "static/media/affordable_price_new.e2c3ac71.svg": "/EffyBuy/static/media/affordable_price_new.e2c3ac71.svg",
     "static/media/anup_agarwal.a216f997.jpg": "/EffyBuy/static/media/anup_agarwal.a216f997.jpg",
     "static/media/anytime_backup.e0736f6e.svg": "/EffyBuy/static/media/anytime_backup.e0736f6e.svg",
     "static/media/automate.99b092ab.svg": "/EffyBuy/static/media/automate.99b092ab.svg",
@@ -117,6 +117,6 @@
     "static/css/2.40ff59d2.chunk.css",
     "static/js/2.51a6b4be.chunk.js",
     "static/css/main.ef12f95f.chunk.css",
-    "static/js/main.380973bb.chunk.js"
+    "static/js/main.8a496fb2.chunk.js"
   ]
 }
