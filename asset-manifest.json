@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/EffyBuy/static/css/main.ef12f95f.chunk.css",
-    "main.js": "/EffyBuy/static/js/main.9a568b07.chunk.js",
-    "main.js.map": "/EffyBuy/static/js/main.9a568b07.chunk.js.map",
+    "main.js": "/EffyBuy/static/js/main.e6dacade.chunk.js",
+    "main.js.map": "/EffyBuy/static/js/main.e6dacade.chunk.js.map",
     "runtime-main.js": "/EffyBuy/static/js/runtime-main.d2b5c5fb.js",
     "runtime-main.js.map": "/EffyBuy/static/js/runtime-main.d2b5c5fb.js.map",
     "static/css/2.40ff59d2.chunk.css": "/EffyBuy/static/css/2.40ff59d2.chunk.css",
@@ -73,7 +73,7 @@
     "static/media/Promoting_better_optimization.466a1a91.png": "/EffyBuy/static/media/Promoting_better_optimization.466a1a91.png",
     "static/media/Quick_Auction.17a8d409.png": "/EffyBuy/static/media/Quick_Auction.17a8d409.png",
     "static/media/RFQ_BANNER-01-01.9ba185d9.png": "/EffyBuy/static/media/RFQ_BANNER-01-01.9ba185d9.png",
-    "static/media/RFQ_Report_Screen.a9343562.png": "/EffyBuy/static/media/RFQ_Report_Screen.a9343562.png",
+    "static/media/RFQ_Report_Screen.4182d0f1.png": "/EffyBuy/static/media/RFQ_Report_Screen.4182d0f1.png",
     "static/media/RFQ_Screen.07e5d987.png": "/EffyBuy/static/media/RFQ_Screen.07e5d987.png",
     "static/media/Reports_.52caa292.png": "/EffyBuy/static/media/Reports_.52caa292.png",
     "static/media/Reverse_Auction.0c333253.svg": "/EffyBuy/static/media/Reverse_Auction.0c333253.svg",
@@ -81,7 +81,7 @@
     "static/media/Reverse_Auctionn.04d89143.png": "/EffyBuy/static/media/Reverse_Auctionn.04d89143.png",
     "static/media/Type_II.cd6318e6.svg": "/EffyBuy/static/media/Type_II.cd6318e6.svg",
     "static/media/about_us.124994e2.png": "/EffyBuy/static/media/about_us.124994e2.png",
-    "static/media/affordable_price_new.e2c3ac71.svg": "/EffyBuy/static/media/affordable_price_new.e2c3ac71.svg",
+    "static/media/affordable_price_new.394ece4e.svg": "/EffyBuy/static/media/affordable_price_new.394ece4e.svg",
     "static/media/anup_agarwal.a216f997.jpg": "/EffyBuy/static/media/anup_agarwal.a216f997.jpg",
     "static/media/anytime_backup.e0736f6e.svg": "/EffyBuy/static/media/anytime_backup.e0736f6e.svg",
     "static/media/automate.99b092ab.svg": "/EffyBuy/static/media/automate.99b092ab.svg",
@@ -117,6 +117,6 @@
     "static/css/2.40ff59d2.chunk.css",
     "static/js/2.f4a5ab42.chunk.js",
     "static/css/main.ef12f95f.chunk.css",
-    "static/js/main.9a568b07.chunk.js"
+    "static/js/main.e6dacade.chunk.js"
   ]
 }
