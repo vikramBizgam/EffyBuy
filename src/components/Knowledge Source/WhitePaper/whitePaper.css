@@ -1,0 +1,77 @@
+.whitepapers_main_div{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Rubik", sans-serif;
+}
+.whitepapers_main_div > .whitepaper_individual_card{
+    width: 45%;
+    /* border: 1px solid #999; */
+    border-radius: 6px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 10px 10px 10px 2px rgba(199,199,199,0.77);
+    -webkit-box-shadow: 10px 10px 10px 2px rgba(199,199,199,0.77);
+    -moz-box-shadow: 10px 10px 10px 2px rgba(199,199,199,0.77);
+}
+.whitepapers_main_div > .whitepaper_individual_card > .whitepaper_download_button{
+    text-align: center;
+    margin-top: 10px;
+}
+.whitepapers_main_div > .whitepaper_individual_card > .whitepaper_description{
+    display: flex;
+}
+.whitepapers_main_div > .whitepaper_individual_card > .whitepaper_description > .whitepaper_description_image > img{
+    width: 150px;
+}
+.whitepapers_main_div > .whitepaper_individual_card > .whitepaper_description > .whitepaper_description_image {
+    margin-right: 10px;
+}
+.whitepapers_main_div > .whitepaper_individual_card > .whitepaper_description > .whitepaper_description_info > .whitepaper_description_info_title {
+    font-size: 25px;
+}
+.whitepapers_main_div > .whitepaper_individual_card > .whitepaper_description > .whitepaper_description_info > .whitepaper_description_info_desc {
+    font-size: 15px;
+    color: #999;
+}
+
+.whitepaper_modal_form{
+    margin: 0 5% 0 5%;
+}
+
+.whitepaper_modal_description{
+    margin: 0 5% 0 5%;
+}
+
+.whitepaper_modal_description > .whitepaper_modal_description_title{
+    font-size: 35px;
+    /* color: #008ed9; */
+    line-height: 45px;
+    font-family: "Rubik", sans-serif;
+}
+
+.whitepaper_modal_description > .whitepaper_modal_description_points > ul > li{
+    font-size: 15px;
+    color: #999;
+}
+
+@media only screen and (max-width: 1000px){
+    .whitepapers_main_div > .whitepaper_individual_card{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .whitepapers_main_div > .whitepaper_individual_card > .whitepaper_description{
+        display: block;
+    }
+    .whitepapers_main_div > .whitepaper_individual_card > .whitepaper_description > .whitepaper_description_info > .whitepaper_description_info_title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.vvvv{
+  background: url('../../../assets/images/shape/popup.svg') no-repeat top center;
+  background-size: cover;
+
+}
