@@ -58,6 +58,13 @@ import {
   } from "react-accessible-accordion";
 
   import { PopupButton, CalendlyEventListener } from "react-calendly";
+  import { Modal, Button } from "react-bootstrap";
+  
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
+import emailjs from '@emailjs/browser';
+
+
 
 
   
@@ -127,6 +134,17 @@ import {
   ];
 
 export default class ReverseAuction extends Component {
+  state={
+    show1:false,
+    show2:false,
+    success:false,
+    email:"",
+    name: "",
+    number1:"",
+    number2:"",
+    number3:"",
+}
+
   componentDidMount(){
       window.scrollTo(0, 0)
       document.title="Reverse Auction"
@@ -147,6 +165,45 @@ export default class ReverseAuction extends Component {
     return false;
   };
 
+  handleSubmitPopup = (e) => {
+    e.preventDefault();
+        emailjs.sendForm('service_h28clne', 'template_vrxq1v7', e.target, '_SkP_OebRj5Q-nHBw')
+        this.setState({
+          show1:false,
+          show2:false,
+          success:false,
+        })
+        alert(`we will get back to you soon`)
+  };
+
+  infoChange(e){
+    this.setState({
+        [e.target.name]: e.target.value
+    })
+}
+
+  handleShow1 = () => {
+    this.setState({
+        show1:true
+    })
+};
+handleClose1 = () => {
+    this.setState({
+        show1:false
+    })
+};
+
+  handleShow2 = () => {
+    this.setState({
+        show2:true
+    })
+};
+handleClose2 = () => {
+    this.setState({
+        show2:false
+    })
+};
+
   render(){
   return (<>
 <div className="main-page-wrapper">
@@ -159,7 +216,9 @@ export default class ReverseAuction extends Component {
                 src={imggg1}
                 alt="shape"
                 className="illustration_01"
+                onClick={this.handleShow1}
               />
+              
               {/* <img
                 src="images/assets/ils-01.1.png"
                 alt="shape"
@@ -175,6 +234,108 @@ export default class ReverseAuction extends Component {
                 alt="shape"
                 className="shapes shape-three"
               /> */}
+              <Modal
+                  show={this.state.show1}
+                  onHide={this.handleClose1}
+                  backdrop="static"
+                  keyboard={false}
+              >
+                  <Modal.Header closeButton style={{"backgroundColor":"#ffeaa0","borderBottom":"0px"}}>
+                  <Modal.Title style={{"color":"black"}}>EffyBuy</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body className="vvvs" style={{"color":"black"}}>
+                      <div className="demo_case_study_modal_form">
+                              <div style={{"display":"flex", "justifyContent":"space-evenly", "flexWrap":"wrap"}}>
+                              <div className="form-group">
+                                  <button type="submit" className="download_popup_button" style={{"width":"120px"}} ><a href="https://calendly.com/bizgamsupport/effybuy" target='_blank'  rel="noreferrer">Set Up Demo</a></button>
+                              </div>
+                              <div className="form-group">
+                                  <button type="submit" className="download_popup_button" style={{"width":"80px"}} ><a href="https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT" target='_blank'  rel="noreferrer">Sign Up</a></button>
+                              </div>
+                              <div className="form-group">
+                                  <button type="submit" className="download_popup_button" style={{"width":"100px"}} onClick={this.handleShow2}>Call Back</button>
+                              </div>
+                              
+                              </div>
+                          {/* </form> */}
+                      </div>
+                  </Modal.Body>
+              </Modal>
+
+              <Modal
+                  show={this.state.show2}
+                  onHide={this.handleClose2}
+                  backdrop="static"
+                  keyboard={false}
+              >
+                  <Modal.Header closeButton style={{"backgroundColor":"#ffeaa0","borderBottom":"0px"}}>
+                  <Modal.Title style={{"color":"black"}}>EffyBuy</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body className="vvvs" style={{"color":"black"}}>
+                     
+                      <div className="demo_case_study_modal_form">
+                          <form data-toggle="validator" onSubmit={(e)=>{this.handleSubmitPopup(e)}}>
+                              <div className="form-group">
+                                  <input type="text" data-minlength="4" className="form-control" id="inputName"
+                                      data-error="Please enter atleast 4 words" placeholder="Name"
+                                      required name="name" value={this.state.name} onChange={(e)=>{this.infoChange(e)}}/>
+                                  <div className="help-block with-errors"></div>
+                              </div>
+                              <div className="form-group mt-3">
+                                  <input type="email" className="form-control" id="inputEmail" data-error="Please enter correct email address" 
+                                      pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email"
+                                        required name="email" value={this.state.email} onChange={(e)=>{this.infoChange(e)}}/>
+                                  <div className="help-block with-errors"></div>
+                              </div>
+                              <div className="form-group mt-3" style={{"display":"none"}}>
+                                  <input type="text" value="Call back request" 
+                                        required name="subject"/>
+                                  <div className="help-block with-errors"></div>
+                              </div>
+                              {/* <div className="form-group mt-3">
+                                  <input type="number" className="form-control" id="inputNumber" data-error="Please enter your mobile number" 
+                                       placeholder="Mobile number"
+                                        required name="number1" value={this.state.number1} onChange={(e)=>{this.infoChange(e)}}/>
+                                  <div className="help-block with-errors"></div>
+                              </div> */}
+
+                              {/* <div className="form-group mt-3"> */}
+                              <PhoneInput
+                              
+                              inputProps={{
+                                name: 'phone',
+                                required: true,
+                              }}
+                              inputStyle={{
+                                width:'100%',
+                                height:'38px'
+                              }}
+                                country={'in'}
+                                value={this.state.number2}
+                                required
+                                onChange={number2 => this.setState({ number2 })}
+                              />
+                                  {/* <input type="number" className="form-control" id="inputNumber" data-error="Please enter your mobile number" 
+                                       placeholder="Mobile number"
+                                        required name="number" value={this.state.number} onChange={(e)=>{this.infoChange(e)}}/>
+                                  <div className="help-block with-errors"></div> */}
+                              {/* </div> */}
+
+                              <div className="form-group mt-3">
+                                  <input type="text" className="form-control" id="inputCompanyName" data-error="Please enter company name" 
+                                      placeholder="Company Name" required name="companyName"/>
+                                  <div className="help-block with-errors"></div>
+                              </div>
+                              <br/>
+
+                              <div className="form-group">
+                                  <button type="submit" className="download_popup_button">Request a Callback</button>
+                              </div>
+                          </form>
+                      </div>
+                  </Modal.Body>
+              </Modal>
+
             </div>
           </div>
 

@@ -169,6 +169,11 @@ export default class PPT extends Component {
                                                         placeholder="Company Name" required name="companyName"/>
                                                     <div className="help-block with-errors"></div>
                                                 </div>
+                                                <div className="form-group mt-3" style={{"display":"none"}}>
+                                                    <input type="text" value="Case Study is Downloaded" 
+                                                         required name="subject"/>
+                                                    <div className="help-block with-errors"></div>
+                                                </div>
                                                 <br/>
                                                 <div className="form-group">
                                                     <button type="submit" className="download_popup_button">Download</button>
