@@ -280,6 +280,12 @@ handleClose2 = () => {
   })
 };
 
+infoChange(e){
+  this.setState({
+      [e.target.name]: e.target.value
+  })
+}
+
   handleSubmit = (event, url) => {
     event.preventDefault();
     

@@ -187,6 +187,12 @@ import emailjs from '@emailjs/browser';
         show2:false
     })
   };
+
+  infoChange(e){
+    this.setState({
+        [e.target.name]: e.target.value
+    })
+}
   
     handleSubmit = (event,url) => {
       event.preventDefault();
