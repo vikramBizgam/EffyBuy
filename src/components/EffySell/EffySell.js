@@ -286,6 +286,17 @@ infoChange(e){
   })
 }
 
+handleSubmitPopup = (e) => {
+  e.preventDefault();
+      emailjs.sendForm('service_h28clne', 'template_vrxq1v7', e.target, '_SkP_OebRj5Q-nHBw')
+      this.setState({
+        show1:false,
+        show2:false,
+        success:false,
+      })
+      alert(`we will get back to you soon`)
+};
+
   handleSubmit = (event, url) => {
     event.preventDefault();
     
