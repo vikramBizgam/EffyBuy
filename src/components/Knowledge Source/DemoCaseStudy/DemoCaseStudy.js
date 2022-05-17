@@ -4,7 +4,11 @@ import { Modal, Button } from "react-bootstrap";
 import image from './images/bull_case_study.jpg'
 // import image from '../../Blogs/Blog_images/common_challenges.png'
 import emailjs from '@emailjs/browser';
-
+var elasticemail = require('elasticemail');
+var client = elasticemail.createClient({
+  username: 'support@bizgam.com',
+  apiKey: '2507953C1F67E00B722664F5068BEBA4D48FCD18C3F4B23705B222B093272CFBD0B98CCDBAEA017117A684D2F9B1E260'
+});
 
 export default class PPT extends Component {
     state={
@@ -67,20 +71,36 @@ export default class PPT extends Component {
             show1:false,
             success:true
         })
-        window.Email.send({
-            Host : "smtp.gmail.com",
-            Username : "support@bizgam.com",
-            Password : "B1zG@m4u",
-            // Username : "ai@bizgam.com",
-            // Password : "florescer@2021",
-            // Credential : true,
-            To : this.state.email,
-            From : "support@bizgam.com",
-            Subject : "Effybuy : Download Case Study",
-            Body : "<html><strong><a href='https://docs.google.com/presentation/d/1b7HVB30WXDv5ErySK666yB23M5VqW1mY/export?format=pdf'>Click here</a></strong><em> to download the case study.</em></html>"
-        }).then(
-          message => alert(`Mail has been sent ${message}`)
-        );
+        // window.Email.send({
+        //     Host : "smtp.gmail.com",
+        //     Username : "support@bizgam.com",
+        //     Password : "B1zG@m4u",
+        //     // Username : "ai@bizgam.com",
+        //     // Password : "florescer@2021",
+        //     // Credential : true,
+        //     To : this.state.email,
+        //     From : "support@bizgam.com",
+        //     Subject : "Effybuy : Download Case Study",
+        //     Body : "<html><strong><a href='https://docs.google.com/presentation/d/1b7HVB30WXDv5ErySK666yB23M5VqW1mY/export?format=pdf'>Click here</a></strong><em> to download the case study.</em></html>"
+        // }).then(
+        //   message => alert(`Mail has been sent ${message}`)
+        // );
+
+        var msg = {
+            from: 'Support@bizgam.com',
+            from_name: 'Admin',
+            to: this.state.email,
+            subject: 'Effybuy : Download Case Study',
+            body_html: "<html><strong><a href='https://docs.google.com/presentation/d/1b7HVB30WXDv5ErySK666yB23M5VqW1mY/export?format=pdf'>Click here</a></strong><em> to download the case study.</em></html>"
+          };
+           
+          client.mailer.send(msg, function(err, result) {
+            if (err) {
+              return console.error(err);
+            }
+           
+            console.log(result);
+          });
       }
 
     // handleSubmit(e){
