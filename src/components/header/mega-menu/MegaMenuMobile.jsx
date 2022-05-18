@@ -186,13 +186,15 @@ const Resources = [
   },
   {
     name: "E-BOOKS",
-    routerPath: "/EffyBuy/resources/ebooks",
+    routerPath: "/EffyBuy",
+    // routerPath: "/EffyBuy/resources/ebooks",
     class:"fas fa-poll-h",
     desc:"Get insightful updates about auto procurement with EffyBuy",
   },
   {
     name: "WHITEPAPER",
-    routerPath: "/EffyBuy/resources/white_papers",
+    // routerPath: "/EffyBuy/resources/white_papers",
+    routerPath: "/EffyBuy",
     class:"far fa-newspaper",
     desc:"Deep dive knowledge about EffyBuy offerings and its merits",
   },
