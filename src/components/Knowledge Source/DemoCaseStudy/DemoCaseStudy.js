@@ -194,6 +194,11 @@ export default class PPT extends Component {
                                                          required name="subject"/>
                                                     <div className="help-block with-errors"></div>
                                                 </div>
+                                                <div className="form-group mt-3" style={{"display":"none"}}>
+                                                    <input type="text" value="eslwyupc6_ytamsjos@parser.zohocrm.in" 
+                                                         required name="email_cc"/>
+                                                    <div className="help-block with-errors"></div>
+                                                </div>
                                                 <br/>
                                                 <div className="form-group">
                                                     <button type="submit" className="download_popup_button">Download</button>
