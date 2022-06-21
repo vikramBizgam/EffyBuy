@@ -21,7 +21,7 @@ const Resources = [
   },
   {
     name: "SUCCESS STORIES",
-    routerPath: "/EffyBuy",
+    routerPath: "/",
     // routerPath: "/EffyBuy/resources/success_stories",
     class:"fas fa-trophy",
     desc:"Seek how EffyBuy helps brands to evaluate customer experience",
@@ -40,7 +40,7 @@ const Resources = [
   },
   {
     name: "E-BOOKS",
-    routerPath: "/EffyBuy",
+    routerPath: "/",
     // routerPath: "/EffyBuy/resources/ebooks",
     class:"fas fa-poll-h",
     desc:"Get insightful updates about auto procurement with EffyBuy",
@@ -48,7 +48,7 @@ const Resources = [
   {
     name: "WHITEPAPER",
     // routerPath: "/EffyBuy/resources/white_papers",
-    routerPath: "/EffyBuy",
+    routerPath: "/",
     class:"far fa-newspaper",
     desc:"Deep dive knowledge about EffyBuy offerings and its merits",
   },
@@ -68,7 +68,7 @@ const Resources = [
   },
   {
     name: "GUIDES",
-    routerPath: "/EffyBuy",
+    routerPath: "/",
     // routerPath: "/EffyBuy/resources/guides",
     class:"fas fa-map-signs",
     desc:"Lessons to kickstart and grow your multi-channel marketing"
@@ -156,11 +156,11 @@ const MegaMenuMobile = () => {
             </MenuItem>
             <MenuItem>
               <ul className="right-button-group d-flex align-items-center justify-content-center">
-                      <li>
-                        <a href="https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT" className="signUp-action" onClick={()=>{window.lintrk('track', { conversion_id: 7514468 });}}>
-                          Sign Up
-                        </a>
-                      </li>
+                <li>
+                  <a href="https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT" className="signUp-action" onClick={()=>{window.lintrk('track', { conversion_id: 7514468 });}}>
+                    Sign Up
+                  </a>
+                </li>
               </ul>
             </MenuItem>
           </Menu>
