@@ -1,21 +1,17 @@
 import React, { Component } from 'react'
 import './pricing.css'
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
-// import CheckIcon from '@material-ui/icons/Check';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Brand_promise from '../../assets/images/icon/1621436901571.png';
-// import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-
-// import Brand_promise from ''
-// import { Link } from 'react-router-dom'
 import PricingTable from './PricingTable'
 import axios from 'axios';
-// import useDocumentTitle from '../useDocumentTitle';
 import PricingPanel from '../HomePAgeContent/SeventhPannel'
+import DocumentMeta from 'react-document-meta';
+
 
 export default class Pricing extends Component {
     constructor(props){
@@ -29,7 +25,6 @@ export default class Pricing extends Component {
 
     componentDidMount(){
         window.scrollTo(0, 0)
-        // useDocumentTitle("ok")
         document.title="EffyBuy | Pricing"
         // let url2 = 'https://extreme-ip-lookup.com/json/'
         let url2 = 'https://geolocation-db.com/json/f9902210-97f0-11eb-a459-b997d30983f1'
@@ -37,7 +32,6 @@ export default class Pricing extends Component {
         // const url = `${url2}`;
     axios.get(url2)
     .then((res) => {
-        // alert(res)
         if(res.data.country_code === 'IN'){
             this.setState({
                 symbol: '₹',
@@ -140,8 +134,25 @@ export default class Pricing extends Component {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
       }
     render() {
+        const meta = {
+            title: 'Pricing - Effybuy',
+            description: "EffyBuy provides Money-saving options for the Procurement process with Several Pricing Plans. We provide Monthly, Yearly, as well as free plans for utilizing our service.",
+            meta: {
+              charset: 'utf-8',
+              // name: {
+              //   keywords: 'react,meta,document,html,tags'
+              // }
+            }
+          };
+                
         return (
+            <DocumentMeta {...meta}>
             <div ref={this.myRef} className="pricing_main_div">
+            <div className='title-style-seven text-center'>
+                        <h1 >
+                            Pricing
+                        </h1>
+                    </div> 
                 
                 <div className="pricing_title_div" >
                     <div className="title" >
@@ -165,287 +176,7 @@ export default class Pricing extends Component {
 
 
                 <div className="pricing_cards_div">
-                {/* <div className="monthly_yearly" onChange={(e)=>{this.change(e)}}>
-                    <input id="toggle-on" className="toggle toggle-left" name="toggle" value="false" type="radio" defaultChecked/>
-                    <label htmlFor="toggle-on" className="toggle_btn toggle_btn-left">Monthly</label>
-                    <input id="toggle-off" className="toggle toggle-right" name="toggle" value="true" type="radio"/>
-                    <label htmlFor="toggle-off" className="toggle_btn toggle_btn-right">Yearly</label>
-                </div> */}
-                {/* <div className="pricing_cards_main_div">
-
-                    <div className="pricing_card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                        <div className="card_top">
-                            <div className="card_top_title without_discount">
-                                FREE
-                            </div>
-                            <div className="card_top_price">
-                                {this.state.symbol} 0
-                            </div>
-                            <div className="card_top_suitedfor">
-                                Good for trial
-                            </div>
-                            <div className="card_top_button">
-                                <button className="btn btn-sm">START FREE TRIAL</button>
-                            </div>
-                        </div>
-                        <hr/>
-                        <div className="card_bottom_main_div">
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_info">
-                                    Enjoy your <b>free trial</b>
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Quick Auction Setup
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Video Tutorials
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Email Notifications
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Trial Support
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Savings Dashboard
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="pricing_card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="450">
-                        <div className="card_top">
-                            <div className="card_top_title">
-                                STARTUP
-                            </div>
-                            <div className="card_top_discount">
-                                <del className="card_top_discount_number">{this.state.symbol}{this.numberWithCommas(this.state.startup[0])}</del> 
-                                <span className="card_top_discount_text">60% Discount for 3 months</span>
-                            </div>
-                            <div className="card_top_price">
-                                {this.state.symbol} {this.state.startup[1]}
-                            </div>
-                            <div className="card_top_suitedfor">
-                                For Individuals and Small teams
-                            </div>
-                            
-                            <div className="card_top_button">
-                                <button className="btn btn-sm">BUY NOW</button>
-                            </div>
-                        </div>
-                        <hr/>
-                        <div className="card_bottom_main_div">
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_info">
-                                    Everything in <b>FREE TRIAL +</b>
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Reverse Auction
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Live Monitoring Of Auction
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Forward Auction
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Auction OTP
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Notifications Activations
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="pricing_card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-                        <div className="card_top">
-                            <div className="card_top_title">
-                                PROFESSIONAL
-                            </div>
-                            <div className="card_top_discount">
-                                <del className="card_top_discount_number">{this.state.symbol}{this.numberWithCommas(this.state.professional[0])}</del> 
-                                <span className="card_top_discount_text">50% Discount for 3 months</span>
-                            </div>
-                            <div className="card_top_price">
-                                {this.state.symbol} {this.state.professional[1]}
-                            </div>
-                            <div className="card_top_suitedfor">
-                                For Medium and Large businesses
-                            </div>
-                            <div className="card_top_button">
-                                <button className="btn btn-sm">BUY NOW</button>
-                            </div>
-                        </div>
-                        <hr/>
-                        <div className="card_bottom_main_div">
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_info">
-                                    Everything in <b>STARTUP +</b>
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Live Chat With Supplier
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Auto Report Emailers
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Dedicated Account Manager
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Phone Support
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    3 Access Controls
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="pricing_card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="750">
-                        <div className="card_top">
-                            <div className="card_top_title without_discount">
-                            ENTERPRISE
-                            </div>
-                            <div className="card_top_price">
-                                custom
-                            </div>
-                            <div className="card_top_suitedfor">
-                                For Multi-National and Large Orgs.
-                            </div>
-                            <div className="card_top_button">
-                                <button className="btn btn-sm">GET IN TOUCH</button>
-                            </div>
-                        </div>
-                        <hr/>
-                        <div className="card_bottom_main_div">
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_info">
-                                    Everything in <b>PROFESSIONAL +</b>
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Multiple Acces Control
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Custom Reports
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    3rd Party API Integration
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    ASN Integration
-                                </div>
-                            </div>
-                            <div className="card_bottom_single_div">
-                                <div className="card_bottom_icon">
-                                    <CheckIcon/>
-                                </div>
-                                <div className="cardbottom_text">
-                                    Barcode Integration
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div> */}
+              
 
                 <PricingPanel/>
 
@@ -453,9 +184,6 @@ export default class Pricing extends Component {
                         Local taxes (VAT, GST, etc.) will be charged in addition to the prices mentioned.
                     </div>
                 <div >
-                    {/* <Link to='/BizGam/pricing/comparison'>
-                        See our complete feature comparison
-                    </Link> */}
                     <Accordion>
                             <AccordionSummary
                             expandIcon={<ExpandMoreIcon color="primary" />}
@@ -489,9 +217,6 @@ export default class Pricing extends Component {
                 </a>
                 </button>
                 </div>
-                {/* <div className="join_image">
-                    <img style={{width:'90%'}} alt="" src="https://www.zohowebstatic.com/sites/default/files/crm/zpricing-brands-bg-1x.png"/>
-                </div> */}
                 </div>
                 
             </div>
@@ -644,6 +369,7 @@ export default class Pricing extends Component {
 
 
             </div>
+            </DocumentMeta>
         )
     }
 }

@@ -27,21 +27,6 @@ const FormFooterSignup = () => {
       setBorder_color("red")
       setError("Please enter valid email")
     }
-    // if(validator.validate(email)){
-    //   setError("")
-    //   setBorder_color("#999")
-    //   emailjs.sendForm('service_h28clne', 'template_0vm3br4', event.target, '_SkP_OebRj5Q-nHBw')
-    //     .then((result) => {
-    //         console.log(result.text);
-    //         window.location.href = "https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT"
-    //       }, (error) => {
-    //         console.log(error.text);
-    //         window.location.href = "https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT"
-    //     });
-    // }else{
-    //   setBorder_color("red")
-    //   setError("Please enter valid email")
-    // }
   };
 
   function change(e){

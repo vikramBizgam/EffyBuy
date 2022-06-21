@@ -36,7 +36,7 @@
 .knowledge_source_main_div > .btn-group{
     display: flex;
     justify-content: center;
-    margin: 0 auto!important
+    margin: 0 auto!important;
 }
 .knowledge_source_main_div > .btn-group{
     width: 650px!important;
@@ -51,6 +51,20 @@
     font-size: 20px;
     background-color: white;
     border: none;
+}
+.knowledge_source_main_div > .btn-group > label > a > input{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+.knowledge_source_main_div > .btn-group > label.active > a:hover{
+    color: white;
+}
+.knowledge_source_main_div > .btn-group > label > a:hover{
+    color: black;
+}
+.knowledge_source_main_div > .btn-group > label > a{
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 700px){

@@ -1,19 +1,39 @@
 import React, { Component } from 'react'
 import './privacyPolicy.css'
+import DocumentMeta from 'react-document-meta';
+
+
 
 export default class PrivacyPolicy extends Component {
     componentDidMount(){
         window.scrollTo(0, 0)
     }
+    
     render() {
+        const meta = {
+            title: 'Our Privacy Policy - EffyBuy',
+            description: "EffyBuy is committed to protecting your data and providing a secure online experience. We value your trust and offer high-security options to your Data.",
+            meta: {
+              charset: 'utf-8',
+              // name: {
+              //   keywords: 'react,meta,document,html,tags'
+              // }
+            }
+          };
+                
         return (
+            <DocumentMeta {...meta}>
             <div className="privacy_policy_main_div">
-                {/* <div className="Terms_and_conditions_main_div"> */}
+            <div className='title-style-seven text-center'>
+                        <h1 >
+                        Privacy Policy
+                        </h1>
+                    </div> 
                 <div className="privacy_policy_title_div">
                     <div >
-                        <div className="privacy_policy_title">
+                        {/* <div className="privacy_policy_title">
                             Privacy Policy
-                        </div>
+                        </div> */}
                         <div className="privacy_policy_title_effybuy">
                             EffyBuy Web Site Privacy Statement
                         </div>
@@ -185,6 +205,7 @@ export default class PrivacyPolicy extends Component {
                     </ul>
                 </div>
             </div>
+            </DocumentMeta>
         )
     }
 }

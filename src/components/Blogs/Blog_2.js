@@ -133,8 +133,6 @@ export default class Blog_2 extends Component {
                     6. Faster procurement process and an overall increase in efficiency<br/>
                     7. Better relationship with supplier as all data is visible, thus transparency in the process helps
                 </div>
-                {/* <div className="individual_blog_paragraph">
-                </div> */}
             </div>
         )
     }

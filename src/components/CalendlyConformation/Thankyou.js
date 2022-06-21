@@ -6,11 +6,9 @@ import shape3 from '../../assets/images/shape/shape03.svg'
 import shape4 from '../../assets/images/shape/shape04.svg'
 
 const PreviewMain = () => {
-//   useDocumentTitle("Preview || Deski-Saas & Software React Template");
   return (
     <div className="main-page-wrapper">
       <div className="landing-banner" id="intro" style={{"paddingTop":"150px"}}>
-        {/* <Header /> */}
 
         <div className="container">
           <div className="text-wrapper">
@@ -23,12 +21,7 @@ const PreviewMain = () => {
               A calendar invitation has been sent to your email address.
             </p>
           </div>
-          {/* /.text-wrapper */}
 
-          {/* <div className="block-bg-wrapper">
-            <DemoCounter />
-          </div> */}
-          {/* /.block-bg-wrapper */}
         </div>
 
         <img
@@ -52,7 +45,6 @@ const PreviewMain = () => {
           className="shape shape-four"
         />
       </div>
-      {/* /.landing-banner */}
 
      
     </div>

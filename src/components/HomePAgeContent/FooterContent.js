@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import FormFooterSignup from "../Forms/FormFooterSignup";
 import effybuy_logo_with_name from '../../assets/images/icon/effybuy_logo_with_name.png'
 import Chatbot from "./Chatbot";
-// import React from 'react'
 const socialContent = [
   {
     icon: "fa-linkedin",
@@ -41,17 +40,7 @@ export default function FooterContent() {
               <img src={effybuy_logo_with_name} style={{"width":"180px"}} alt="logo" />
             </a>
           </div>
-          {/* <div className="newsletter">
-            <p>
-            BizGam AI pvt ltd,<br/>
-            No.3, Kovai Estate,<br/>
-            Veeriyam Palayam Road,<br/>
-            Kalapatti, Coimbatore,<br/>
-            Tamil Nadu, 641048<br/>
-            </p>
-          </div> */}
         </div>
-        {/* End .col */}
   
         <div
           className="col-lg-2 col-md-6 mb-40"
@@ -62,20 +51,10 @@ export default function FooterContent() {
           <h5 className="title">Links</h5>
           <ul className="footer-list">
             <li>
-              <Link to="/EffyBuy">Home</Link>
+              <Link to="/">Home</Link>
             </li>
-            {/* <li>
-              <Link to="/pricing-cs">Pricing</Link>
-            </li> */}
             <li>
-              {/* <Link to="/#">About us</Link> */}
-              {/* <Link to="/EffyBuy/about_us">About us</Link> */}
-            </li>
-            {/* <li>
-              <Link to="#t">Careers</Link>
-            </li> */}
-            <li>
-              <Link to="#">Resources</Link>
+              <Link to="/resources">Resources</Link>
               
             </li>
             <li>
@@ -105,18 +84,12 @@ export default function FooterContent() {
         >
           <h5 className="title">Legal</h5>
           <ul className="footer-list">
-            {/* <li>
-              <Link to="/terms-conditions">Terms of use</Link>
-            </li> */}
             <li>
-              <Link to="/EffyBuy/TermsAndConditions" target="_blank" rel="noreferrer">Terms & conditions</Link>
+              <Link to="/TermsAndConditions" target="_blank" rel="noreferrer">Terms & conditions</Link>
             </li>
             <li>
-              <Link to="/EffyBuy/privacyPolicy" target="_blank" rel="noreferrer">Privacy policy</Link>
+              <Link to="/privacyPolicy" target="_blank" rel="noreferrer">Privacy policy</Link>
             </li>
-            {/* <li>
-              <Link to="/terms-conditions">Cookie policy</Link>
-            </li> */}
           </ul>
         </div>
         <div
@@ -128,12 +101,10 @@ export default function FooterContent() {
           <div className="newsletter">
             <h5 className="title">Contact us</h5>
             <p>
-              {/* Join over <span>68,000</span> people getting our emails */}
               <span>support@bizgam.com</span>
               <br/>
               <i className="fas fa-phone-alt fa-sm" style={{"marginRight":"10px"}}></i><i className="fab fa-whatsapp" style={{"marginRight":"10px"}}></i>+91 7538 851 133
               <br/>
-              {/* <i className="fab fa-whatsapp" style={{"marginRight":"10px"}}></i>+91 7538 801 133 */}
             </p>
   
             <FormFooterSignup />
@@ -143,12 +114,7 @@ export default function FooterContent() {
             </div>
             
           </div>
-          {/* /.newsletter */}
         </div>
       </div>
     )
 }
-
-
-
-// export default FooterContent;

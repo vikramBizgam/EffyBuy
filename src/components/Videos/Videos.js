@@ -1,28 +1,10 @@
 import React, { Component } from 'react';
-// import './webinar.css'
-import { Link } from "react-router-dom";
-import Automate_your_purchase from '../Blogs/Blog_images/Automate_your_purchase.jpg'
-import { Popup } from 'react-magnific-popup';
 import ModalVideo from 'react-modal-video'
-import video_01 from './images/A_powerful_purchase_automation_tool_for_Sourcing.png'
-import video_02 from './images/Bridging_the_Gap.png'
-import video_03 from './images/create_an_auction.png'
-import video_04 from './images/Grow_your_business.png'
-
-
-
-
-const BlogContent = [
-    {
-      img: "media_04",
-      tag: "Video",
-      iii: video_04,
-      title: `Grow your business with Smartest tools`,
-      dealyAnimation: "50",
-      videoId:"4dXFzPdbOh4",
-    }
-]
-
+import video_01 from './images/A_powerful_purchase_automation_tool_for_Sourcing.webp'
+import video_02 from './images/Bridging_the_Gap.webp'
+import video_03 from './images/create_an_auction.webp'
+import video_04 from './images/Grow_your_business.webp'
+import DocumentMeta from 'react-document-meta';
 
 
 export default class Blog extends Component {
@@ -40,6 +22,7 @@ export default class Blog extends Component {
                 tag: "Video",
                 dealyAnimation: "10",
                 color:"#101621",
+                altTag:"Grow your Business with Smartest Tools"
               },
               {
                 isOpen:false,
@@ -50,6 +33,7 @@ export default class Blog extends Component {
                 tag: "Video",
                 dealyAnimation: "100",
                 color:"#101621",
+                altTag:"Create an Auction"
               },
               {
                 isOpen:false,
@@ -60,6 +44,7 @@ export default class Blog extends Component {
                 tag: "Video",
                 dealyAnimation: "200",
                 color:"#101621",
+                altTag:"Powerful Automation Tool for Sourcing, RFQ & Negotiation"
               },
               {
                 isOpen:false,
@@ -70,6 +55,7 @@ export default class Blog extends Component {
                 tag: "Video",
                 dealyAnimation: "300",
                 color:"#101621",
+                altTag:"Bridge Gap between Purchase & Logistics"
               },
           ]
         }
@@ -117,14 +103,30 @@ export default class Blog extends Component {
 
     
     render() {
+      const meta = {
+        title: 'Videos - Effybuy',
+        description: "Effybuy's Videos - Information about RFP Management Software Automation Tools and Software",
+        meta: {
+          charset: 'utf-8',
+          // name: {
+          //   keywords: 'react,meta,document,html,tags'
+          // }
+        }
+      };
+           
         return (
-            
+          <DocumentMeta {...meta}>
             <>
             <div className="feature-blog-one blog-page-bg">
         <div className="shapes shape-one"></div>
         <div className="shapes shape-two"></div>
         <div className="shapes shape-three"></div>
         <div className="container">
+        <div className='title-style-seven text-center'>
+                        <h1 >
+                            Videos
+                        </h1>
+                    </div>  
         {this.state.modalVideos.map((item, index) => (
             <ModalVideo channel='youtube' isOpen={item.isOpen} videoId={item.videoId} onClose={() => this.closeModal(index)} />
             ))}
@@ -147,33 +149,25 @@ export default class Blog extends Component {
           >
             <img
               src={`${item.iii}`}
-              alt="media"
+              alt={item.altTag}
               className="image-meta"
             />
             <div className="tag">{item.tag}</div>
             <h5 style={{"color":`${item.color}`}}>
-              {/* <Link to={`${item.routePath}`} className="title"> */}
                 {item.title}
-              {/* </Link> */}
             </h5>
             
           </div>
         </div> 
-        // </Popup>
         
       ))}
         
           </div>
         </div>
 
-
-        
-
-
-      </div>
-            
-            </>
-
+      </div>          
+    </>
+    </DocumentMeta>
         )
     }
 }

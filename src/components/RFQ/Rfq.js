@@ -1,35 +1,22 @@
 import React,{ Component } from "react";
-import { Link } from "react-router-dom";
-import useDocumentTitle from '../useDocumentTitle.js';
-// import Header from "../../components/header/Header";
-// import FaqClassic from "../../components/faq/FaqClassicTwo";
-// import SocialTwo from "../../components/social/SocialTwo";
-// import CounterOne from "../../components/counter/CounterOne";
-// import CallToActionFour from "../../components/call-to-action/CallToActionFour";
-// import Footer from "../../components/footer/Footer";
-// import CopyRight from "../../components/footer/CopyRight";
-import FormEvent from '../Forms/FormEvent.js'
-import imggg from '../../assets/images/assets/RFQ_Screen.png'
-// import imggg from '../../assets/images/assets/feature-img-01.png'
+import imggg from '../../assets/images/assets/RFQ_Reverse_Auction_Screen.webp'
 import imggg1 from '../../assets/images/assets/funnel.png'
-// import imggg1 from '../../assets/images/assets/feature-img-01-01.png'
-import imggg2 from '../../assets/images/assets/funnel-08_.png'
-// import imggg2 from '../../assets/images/assets/feature-img-05.png'
-import imggg3 from '../../assets/images/assets/feature-img-06.png'
-import imggg4 from '../../assets/images/assets/feature-img-07.png'
-import imggg5 from '../../assets/images/assets/effybuy vs erp-06.png'
-import rfq_banner from '../../assets/images/assets/RFQ_BANNER-01-01.png'
+import imggg2 from '../../assets/images/assets/compare_RFQ.webp'
+import imggg3 from '../../assets/images/assets/Fast_response_data.webp'
+import imggg4 from '../../assets/images/assets/tracking.webp'
+import imggg5 from '../../assets/images/assets/Effybuy_with_ERP_System.webp'
+import rfq_banner from '../../assets/images/assets/RFQ_Process_Banner.webp'
 import mov_icon_1 from '../../assets/images/assets/Auction-09.png'
 import mov_compare_1 from '../../assets/images/assets/Compare-09.png'
 import mov_hand_1 from '../../assets/images/assets/funnel-09.png'
 import mov_logi_1 from '../../assets/images/assets/logistics-09.png'
 import mov_proc_1 from '../../assets/images/assets/Procurement-09.png'
 import RFQ_Report_Screen from '../../assets/images/assets/RFQ_Report_Screen.png'
+// RFQ_Reverse_Auction_Screen
 import bgimg from '../../assets/images/shape/1.svg'
 import dotshape from '../../assets/images/shape/2.svg'
 import create_icon from '../../assets/images/icon/03.svg'
 import compare_icon from '../../assets/images/icon/04.svg'
-import analysee_icon from '../../assets/images/icon/01.svg'
 import report_icon from '../../assets/images/icon/02.svg'
 import {
     Accordion,
@@ -37,9 +24,11 @@ import {
     AccordionItemHeading,
     AccordionItemButton,
     AccordionItemPanel,
-  } from "react-accessible-accordion";
+} from "react-accessible-accordion";
 
-  import { PopupButton, CalendlyEventListener } from "react-calendly";
+import { PopupButton, CalendlyEventListener } from "react-calendly";
+import DocumentMeta from 'react-document-meta';
+
 
 
   
@@ -70,16 +59,10 @@ import {
       expand: "e",
     },
   ];
-  // export default class Rfq extends Component {
-  //   render(){
-
-  //   }
-  // }
 
 export default class Rfq extends Component {
   componentDidMount(){
       window.scrollTo(0, 0)
-      document.title="RFQ"
   }
 
   handleSubmit = (event,url) => {
@@ -98,32 +81,36 @@ export default class Rfq extends Component {
   };
 
   render(){
+    const meta = {
+      title: 'Reverse Auction Software Application - RFP/RFQ Process Automation Platform',
+      description: "Effybuy involves RFP/RFQ Software in a proficient and simple manner to put you on a way toward obtaining automation with a fully transparent and efficient process.",
+      meta: {
+        charset: 'utf-8',
+        // name: {
+        //   keywords: 'react,meta,document,html,tags'
+        // }
+      }
+    };
+    
   return (
+    <DocumentMeta {...meta}>
     <div className="main-page-wrapper">
-      {/* <Header /> */}
-      {/* End Header */}
-
-      {/* 
-     =============================================
-			Hero Banner One
-		============================================== */}
       <div className="hero-banner-one">
+        <div className='title-style-seven text-center'>
+            <h1 >
+              RFQ & RFP Automation
+            </h1>
+        </div>
         <div className="hero-upper-container">
           <div className="icon-box-one">
             <img src={mov_hand_1} alt="logo" />
           </div>
           <div className="icon-box-two">
-            <img src={mov_icon_1}alt="logo" />
+            <img src={mov_icon_1} alt="logo" />
           </div>
-          {/* <div className="icon-box-three">
-            <img src={mov_compare_1} alt="logo" />
-          </div> */}
           <div className="icon-box-four">
             <img src={mov_compare_1} alt="logo" />
           </div>
-          {/* <div className="icon-box-five">
-            <img src={mov_hand_1}alt="logo" />
-          </div> */}
           <div className="icon-box-six">
             <img src={mov_hand_1} alt="logo" />
           </div>
@@ -140,69 +127,43 @@ export default class Rfq extends Component {
           <div className="bubble-four"></div>
           <div className="bubble-five"></div>
           <div className="bubble-six"></div>
-          {/* End all bubble images */}
 
           <div className="container">
             <div className="row">
               <div className="col-xl-8 col-lg-10 m-auto">
-                <img src={rfq_banner} alt="rfq_banner">
+                <img src={rfq_banner} alt="RFQ Flow Banner">
                 </img>
-                {/* <h1 className="font-rubik hero-heading">
-                  EFFYBUY <span>RFQ's</span>
-                </h1> */}
                 <p className="hero-sub-heading">
-                    {/* Automate your RFQ’s process &<br/>
-                    cut off your quotes cycles and save massively */}
                 </p>
               </div>
-              {/* End .col */}
             </div>
-            {/* End row */}
 
             <form
               action="#"
               className="subscription-form"
               onClick={(e)=>{this.handleSubmit(e,"https://calendly.com/bizgamsupport/effybuy")}}
             >
-              {/* <input type="email" placeholder="Your business email" />
-              <PopupButton
-                      url="https://calendly.com/bizgamsupport/effybuy"
-                      text="Request Demo"
-                      pageSettings={{
-                        hideEventTypeDetails: false,
-                        hideLandingPageDetails: false,
-                      }}
-                      styles={{
-                        color:"white",
-                        border:"none",
-                        }}/> */}
             </form>
-            {/* End form */}
 
-            {/* <p className="sing-in-call">
-              Already using EFFYBUY? <Link to="#">Sign in.</Link>
-            </p> */}
           </div>
-          {/* End .container */}
         </div>
-        {/* /.hero-upper-container */}
       </div>
 
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
         <div class="carousel-inner text-center">
             <div className="carousel-item active" style={{"paddingBottom":"40px"}}>
                   <div style={{"display":"inline-block","position":"relative","zIndex":"5","width":"80%"}}>
-                  <img src={imggg} alt="feature" />
+                  <img src={imggg} alt="RFQ Reverse Auction" />
                   <img
                     src={imggg1}
-                    alt="feature1"
+                    alt="Data Processing Funnel"
                     style={{"width":"30%","right":"2%","bottom":"-10%","zIndex":"1","animation":"jumpTwo 3s infinite linear","position":"absolute"}}
                   />
                 </div>
                   </div>
           <div class="carousel-item text-center" style={{"paddingBottom":"40px"}}>
             <div style={{"display":"inline-block","position":"relative","zIndex":"5","width":"80%"}}>
-            <img class="" src={RFQ_Report_Screen} alt="Second slide" style={{"margin":"0 auto"}}/>
+            <img class="" src={RFQ_Report_Screen} alt="RFQ Work Process Report" style={{"margin":"0 auto"}}/>
             </div>
           </div>
         </div>
@@ -216,30 +177,8 @@ export default class Rfq extends Component {
           <span class="sr-only">Next</span>
         </a>
       </div>
-      {/* /.hero-banner-one */}
-
-      {/* 
-     =============================================
-				Fancy Feature One
-		============================================== */}
       <div className="fancy-feature-one pb-100 md-pb-80">
-        {/* <div className="text-center">
-          <div className="feature-img-area">
-            <img src={imggg} alt="feature" />
-            <img
-              src={imggg1}
-              alt="feature1"
-              className="cs-screen screen-one"
-            />
-          </div>
-
-        </div> */}
-        {/* /.text-center */}
-
-        {/* 
-        =============================================
-				Fancy Block Style One
-		    ============================================== */}
+        
         <div className="block-style-one" style={{"marginTop":"100px"}}>
         <div className="title-style-one text-center mb-150 md-mb-100">
                 <h2>How it works.</h2>
@@ -251,7 +190,6 @@ export default class Rfq extends Component {
                   <div className="icon-box">
                     <img src={create_icon} alt="icon" />
                   </div>{" "}
-                  {/* /.icon-box */}
                   <p>Create</p>
                 </div>
                 <div className="hover-content">
@@ -260,13 +198,11 @@ export default class Rfq extends Component {
                   </span>
                 </div>
               </div>{" "}
-              {/* /.block-meta-data  */}
               <div className="block-meta-data text-center">
                 <div className="line-dot-containerr">
                   <div className="icon-box">
                     <img src={compare_icon} alt="icon" />
                   </div>
-                  {/* /.icon-box */}
                   <p>Compare</p>
                 </div>
                 <div className="hover-content">
@@ -275,28 +211,11 @@ export default class Rfq extends Component {
                   </span>
                 </div>
               </div>
-              {/* /.block-meta-data  */}
-              {/* <div className="block-meta-data text-center">
-                <div className="line-dot-container">
-                  <div className="icon-box">
-                    <img src={analysee_icon} alt="icon" />
-                  </div>
-                  <p>Analyze</p>
-                </div>
-                <div className="hover-content text-center">
-                  <span>
-                    You are one step ahead to create wireframe. Let Automation
-                    do it for you. Simplify workflows.
-                  </span>
-                </div>
-              </div> */}
-              {/* /.block-meta-data */}
               <div className="block-meta-data text-center">
                 <div className="line-dot-containerr">
                   <div className="icon-box">
                     <img src={report_icon} alt="icon" />
                   </div>
-                  {/* /.icon-box */}
                   <p>Report</p>
                 </div>
                 <div className="hover-content text-right">
@@ -305,19 +224,10 @@ export default class Rfq extends Component {
                   </span>
                 </div>
               </div>
-              {/* /.block-meta-data */}
             </div>
           </div>
-          {/* /.container */}
         </div>
-        {/* /.block-style-one */}
       </div>
-      {/* /.fancy-feature-one */}
-
-      {/* 
-     =============================================
-				Fancy Feature Two
-		============================================== */}
       <div className="fancy-feature-two">
         <div className="container">
           <div className="row">
@@ -325,7 +235,6 @@ export default class Rfq extends Component {
               <div className="title-style-one text-center mb-150 md-mb-100">
                 <h2>Know everything about RFQ’s.</h2>
               </div>
-              {/* /.title-style-one */}
             </div>
           </div>
         </div>
@@ -339,9 +248,6 @@ export default class Rfq extends Component {
                 data-aos="fade-right"
                 data-aos-duration="1200"
               >
-                {/* <h6 className="font-rubik" style={{ color: "#FF5291" }}>
-                  COMPARE RFQ
-                </h6> */}
                 <h3 className="font-gilroy-bold">
                   Compare RFQ's
                 </h3>
@@ -353,17 +259,8 @@ export default class Rfq extends Component {
                   <blockquote>
                     Helps to improve measurable productivity and financial saving.
                   </blockquote>
-                  {/* <div className="d-flex align-items-center">
-                    <img src="images/media/img_01.png" alt="media1" />
-                    <div className="info-meta">
-                      <h5>Micle Duke, Product Manager</h5>
-                      <span className="font-rubik">Uber Inc.</span>
-                    </div>
-                  </div> */}
                 </div>
-                {/* <a href="/#">Learn about flexibility</a> */}
               </div>
-              {/*  /.text-wrapper */}
             </div>
 
             <div className="col-lg-6">
@@ -379,7 +276,7 @@ export default class Rfq extends Component {
                     data-aos="fade-left"
                     data-aos-duration="1200"
                   ></div>
-                  <img src={imggg2} alt="feature" />
+                  <img src={imggg2} alt="Compare RFQ" />
                   <img
                     src={bgimg}
                     alt="feature"
@@ -395,11 +292,9 @@ export default class Rfq extends Component {
                   <div className="bubble-three"></div>
                   <div className="bubble-four"></div>
                 </div>
-                {/* /.img-holder */}
               </div>
             </div>
           </div>
-          {/* /.block-style-two */}
 
           <div className="row align-items-center block-style-two pb-150 md-pb-90">
 
@@ -409,13 +304,8 @@ export default class Rfq extends Component {
                 data-aos="fade-left"
                 data-aos-duration="1200"
               >
-                {/* <h6 className="font-rubik" style={{ color: "#AA4CFF" }}>
-                  QUICK & FAST
-                </h6> */}
                 <h3 className="font-gilroy-bold">Fast Response Auto Data Compilation</h3>
                 <p>
-                    {/* Effybuy automatically generate mails notification to your suppliers 
-                    and it's easy to response & collaborated with you using effybuy. */}
                     Effybuy automatically generates Mail Notification to your Vendors where they can 
                     sign in and bid for multiple quotations without hassle. 
                     There's no subscription required for the vendors to submit their Quotes.
@@ -424,28 +314,14 @@ export default class Rfq extends Component {
                   <blockquote>
                     Save processing time with 80% by online and drive efficiently.  
                   </blockquote>
-                  {/* <div className="d-flex align-items-center">
-                    <img src="images/media/img_01.png" alt="media1" />
-                    <div className="info-meta">
-                      <h5>Micle Duke, Product Manager</h5>
-                      <span className="font-rubik">Uber Inc.</span>
-                    </div>
-                  </div> */}
                 </div>
-                {/*  /.quote */}
               </div>
-              {/*  /.text-wrapper */}
             </div>
 
             <div className="col-lg-6 order-lg-first">
               <div data-aos="fade-right" data-aos-duration="1200">
                 <div className="img-holder img-holder-two">
-                  <img src={imggg3} alt="feature" />
-                  {/* <img
-                    src="images/assets/feature-img-06-01.png"
-                    alt="feature1"
-                    className="cs-screen screen-one"
-                  /> */}
+                  <img src={imggg3} alt="Fast Response Auto Data" />
                   <img
                     src={bgimg}
                     alt="feature2"
@@ -461,12 +337,10 @@ export default class Rfq extends Component {
                   <div className="bubble-three"></div>
                   <div className="bubble-four"></div>
                 </div>
-                {/* /.img-holder */}
               </div>
             </div>
             
           </div>
-          {/* /.block-style-two */}
 
           <div className="row align-items-center block-style-two pb-150 md-pb-50">
             
@@ -476,9 +350,6 @@ export default class Rfq extends Component {
                 data-aos="fade-right"
                 data-aos-duration="1200"
               >
-                {/* <h6 className="font-rubik" style={{ color: "#03DDD5" }}>
-                  PROJECT STATUS
-                </h6> */}
                 <h3 className="font-gilroy-bold">
                   Tracking
                 </h3>
@@ -492,18 +363,12 @@ export default class Rfq extends Component {
                   </blockquote>
                 </div>
               </div>
-              {/* /.text-wrapper */}
             </div>
 
             <div className="col-lg-6 col-md-7 m-auto">
               <div data-aos="fade-left" data-aos-duration="1200">
                 <div className="img-holder img-holder-two">
-                  <img src={imggg4} alt="feature" />
-                  {/* <img
-                    src="images/assets/feature-img-07-01.png"
-                    alt="feature"
-                    className="cs-screen screen-one"
-                  /> */}
+                  <img src={imggg4} alt="Tracking Flow" />
                   <img
                     src={bgimg}
                     alt="feature"
@@ -519,11 +384,9 @@ export default class Rfq extends Component {
                   <div className="bubble-three"></div>
                   <div className="bubble-four"></div>
                 </div>
-                {/* /.img-holder */}
               </div>
             </div>
           </div>
-          {/* /.block-style-two */}
 
           <div className="row align-items-center block-style-two pb-150 md-pb-90">
             <div className="col-lg-6 col-md-8 m-auto">
@@ -539,7 +402,7 @@ export default class Rfq extends Component {
                     data-aos="fade-right"
                     data-aos-duration="1200"
                   ></div>
-                  <img src={imggg5} alt="feature" />
+                  <img src={imggg5} alt="Integrate EffyBuy with ERP System" />
                   <img
                     src={bgimg}
                     alt="feature"
@@ -555,7 +418,6 @@ export default class Rfq extends Component {
                   <div className="bubble-three"></div>
                   <div className="bubble-four"></div>
                 </div>
-                {/* /.img-holder */}
               </div>
             </div>
             <div className="col-lg-6">
@@ -564,154 +426,19 @@ export default class Rfq extends Component {
                 data-aos="fade-left"
                 data-aos-duration="1200"
               >
-                {/* <h6 className="font-rubik" style={{ color: "#FF5291" }}>
-                  COMPARE RFQ
-                </h6> */}
                 <h3 className="font-gilroy-bold">
                   Integrate EFFYBUY with your ERP system for increased efficiency
                 </h3>
-                {/* <p>
-                    Fully transparent and efficient process that automate 
-                    your rfqs, compare and analyze quotations for you.
-                </p> */}
-                {/* <div className="quote">
-                  <blockquote>
-                    Helps to improve measurable productivity and financial saving .
-                  </blockquote>
-                  <div className="d-flex align-items-center">
-                    <img src="images/media/img_01.png" alt="media1" />
-                    <div className="info-meta">
-                      <h5>Micle Duke, Product Manager</h5>
-                      <span className="font-rubik">Uber Inc.</span>
-                    </div>
-                  </div>
-                </div> */}
-                {/* <a href="/#">Learn about flexibility</a> */}
               </div>
-              {/*  /.text-wrapper */}
             </div>
           </div>
         </div>
-        {/* /.container */}
       </div>
-      {/* /.fancy-feature-two */}
-
-      {/* 
-     =============================================
-			Usable Tools Section
-		============================================== */}
-      {/* <div className="useable-tools-section bg-color mt-140 mb-50 md-mt-80">
-        <div className="bubble-one"></div>
-        <div className="bubble-two"></div>
-        <div className="bubble-three"></div>
-        <div className="bubble-four"></div>
-        <div className="bubble-five"></div>
-        <div className="container">
-          <h6 className="font-rubik">Integrates with your tools</h6>
-          <h2>
-            Deski ties into your existing tools, services, & workflow. Get
-            notifications or create a Story with others tools.
-          </h2>
-
-          <SocialTwo />
-        </div>
-      </div> */}
-      {/* /.useable-tools-section */}
-
-      {/* 
-     =============================================
-				Fancy Feature Three
-		============================================== */}
-      {/* <div className="fancy-feature-three pt-200 md-pt-80">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="title-style-one">
-                <h6 className="font-rubik">You’re in good company</h6>
-                <h2>Join the community by using our apps to grow faster.</h2>
-              </div>
-
-              <CounterOne />
-            </div>
-
-            <div className="col-lg-6">
-              <div className="clients-feedback-classic md-mt-80">
-                <div
-                  className="feedback-wrapper"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                >
-                  <img
-                    src="images/media/img_02.png"
-                    alt=""
-                    className="media-meta"
-                  />
-                  <p>
-                    it’s a great exprience to work with deski. They’r vey humble
-                    and expert & the service has been excellent & super.
-                  </p>
-                  <h6 className="name">Rena Singleton</h6>
-                  <span className="font-rubik disg-info">
-                    Former Assistant Jamuna Group.
-                  </span>
-                </div>{" "}
-                <div
-                  className="feedback-wrapper"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                >
-                  <img
-                    src="images/media/img_03.png"
-                    alt=""
-                    className="media-meta"
-                  />
-                  <p>
-                    it’s a great exprience to work with deski. They’r vey humble
-                    and expert & the service has been excellent & super.
-                  </p>
-                  <h6 className="name">Rashed Ka.</h6>
-                  <span className="font-rubik disg-info">
-                    UI designer Baper Inc.
-                  </span>
-                </div>{" "}
-                <div
-                  className="feedback-wrapper"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                >
-                  <img
-                    src="images/media/img_04.png"
-                    alt=""
-                    className="media-meta"
-                  />
-                  <p>
-                    it’s a great exprience to work with deski. They’r vey humble
-                    and expert & the service has been excellent & super.
-                  </p>
-                  <h6 className="name">Zubayer Hasan</h6>
-                  <span className="font-rubik disg-info">
-                    Front-end coder HeloShape.
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* /.fancy-feature-three */}
-
-      {/* 
-     =============================================
-			Call To Action
-		============================================== */}
       <div className="fancy-short-banner-one">
         <div className="container">
         <div className="row align-items-center">
       <div className="col-lg-12">
         <div className="title-style-one" style={{"textAlign":"center"}}>
-          {/* <h6 className="font-rubik" style={{ color: "#787CFF" }}>
-            Start your free trial.
-          </h6> */}
           <h2>100+ Customer are buying <br/>efficiently using EffyBuy !</h2>
           <br/>
           <h4>Try Now - One month free trial.</h4>
@@ -740,19 +467,9 @@ export default class Rfq extends Component {
                     }}></CalendlyEventListener>
           </div>
         </div>
-        {/* /.title-style-one */}
       </div>
-      {/* <div className="col-lg-6">
-        <div className="form-wrapper">
-          <FormEvent />
-          <p className="font-rubik">
-            Already a member? <Link to="login">Sign in.</Link>
-          </p>
-        </div>
-      </div> */}
     </div>
         </div>
-        {/* /.container */}
         <div className="bubble-one"></div>
         <div className="bubble-two"></div>
         <div className="bubble-three"></div>
@@ -760,12 +477,6 @@ export default class Rfq extends Component {
         <div className="bubble-five"></div>
         <div className="bubble-six"></div>
       </div>
-      {/* /.fancy-short-banner-one */}
-
-      {/* 
-     =============================================
-				Faq Classic
-		============================================== */}
       <div className="faq-classic pt-225 md-pt-120">
         <div className="container">
           <div className="row">
@@ -774,13 +485,7 @@ export default class Rfq extends Component {
                 <h6 className="font-rubik">Find your answers</h6>
                 <h2>Have any thought? Look here.</h2>
               </div>
-              {/* /.title-style-one */}
-              {/* <Link to="#" className="theme-btn-one mt-50 md-mt-30">
-                {" "}
-                Go to Faq
-              </Link> */}
             </div>
-            {/* End .col */}
             <div className="col-lg-6">
               <div className="md-mt-60">
               <div className="accordion-style-four">
@@ -795,11 +500,9 @@ export default class Rfq extends Component {
                   </h5>
                 </AccordionItemButton>
               </AccordionItemHeading>
-              {/* Accordion Heading */}
               <AccordionItemPanel className="card-body fadeInUp">
                 <p>{item.desc}</p>
               </AccordionItemPanel>
-              {/* Accordion Body Content */}
             </AccordionItem>
           ))}
         </Accordion>
@@ -807,16 +510,9 @@ export default class Rfq extends Component {
     </div>
               </div>
             </div>
-            {/* End .col */}
           </div>
         </div>
       </div>
-      {/* /.faq-classic */}
-
-      {/* 
-      =============================================
-				Footer
-		  ============================================== */}
       <div className="footer-bg-wrapper">
         <div className="bubble-one"></div>
         <div className="bubble-two"></div>
@@ -838,7 +534,6 @@ export default class Rfq extends Component {
                 <a href="https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT" className="signUp-action">
                   Start your free trial
                 </a>
-                {/* <Link to="#"> Start your free trial</Link> */}
                 <div className="bubble-one"></div>
                 <div className="bubble-two"></div>
                 <div className="bubble-three"></div>
@@ -849,23 +544,10 @@ export default class Rfq extends Component {
           </div>
         </div>
 
-        {/* <footer className="theme-footer-one pt-130 md-pt-70">
-          <div className="top-footer">
-            <div className="container">
-              <Footer />
-            </div>
-          </div>
-
-          <div className="container">
-            <div className="bottom-footer-content">
-              <CopyRight />
-            </div>
-          </div>
-        </footer> */}
       </div>
     </div>
+    </DocumentMeta>
   );
 };
 };
 
-// export default ProjectManagement;

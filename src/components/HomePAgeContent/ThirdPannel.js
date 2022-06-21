@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-import withouteffybuy from '../../assets/images/media/withouteffybuy.jpg'
-import witheffybuy from '../../assets/images/media/witheffybuy.jpg'
+import withouteffybuy from '../../assets/images/media/withouteffybuy.webp'
+import witheffybuy from '../../assets/images/media/witheffybuy.webp'
 import cross from '../../assets/images/icon/64.svg'
 import right from '../../assets/images/icon/63.svg'
 
@@ -21,7 +20,7 @@ export default function Third() {
                   <h3 className="title" style={{"textAlign":"center"}}>
                     <span>With </span> Effybuy
                   </h3>
-                  <img src={witheffybuy} alt="witheffybuy" style={{"width":"400px","margin":"0 auto"}}/>
+                  <img src={witheffybuy} alt="With Effybuy" style={{"width":"400px","margin":"0 auto"}}/>
                   <div style={{"margin":"5% 0 0 30%"}}>
                   <ul>
                       <li style={{"position":"relative","margin":"10px"}}>
@@ -49,7 +48,7 @@ export default function Third() {
                   <h3 className="title" style={{"textAlign":"center"}}>
                   <span>Without </span> Effybuy
                   </h3>
-                    <img src={withouteffybuy} alt="withouteffybuy" style={{"width":"400px","margin":"0 auto"}}/>
+                    <img src={withouteffybuy} alt="Without Effybuy" style={{"width":"400px","margin":"0 auto"}}/>
                   <div style={{"margin":"5% 0 0 30%"}}>
                   <ul>
                       <li style={{"position":"relative","color":"#999","margin":"10px"}}>
@@ -67,15 +66,6 @@ export default function Third() {
                   </ul>
                   </div>
                 </div>
-                
-                {/* <div className="screen-holder-two">
-                  <img src="images/assets/screen_12.png" alt="screen" />
-                  <img
-                    src="images/assets/screen_13.png"
-                    alt=""
-                    className="shapes screen-one"
-                  />
-                </div> */}
                 
               </div>
             </div>

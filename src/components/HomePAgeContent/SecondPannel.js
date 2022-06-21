@@ -6,10 +6,8 @@ import img2 from '../../assets/images/shape/30.svg'
 import img3 from '../../assets/images/shape/31.svg'
 import img4 from '../../assets/images/shape/32.svg'
 import img5 from '../../assets/images/shape/33.svg'
-// import img6 from '../../assets/images/shape/34.svg'
-// import img7 from '../../assets/images/media/img_19.png'
 import icon1 from '../../assets/images/icon/26.svg'
-import second_pannel_nn from '../../assets/Gifs/Gif-Animation.gif'
+import second_pannel_nn from '../../assets/Gifs/Chainflow.gif'
 
 
 export default class SecondPannel extends React.Component {
@@ -64,21 +62,9 @@ export default class SecondPannel extends React.Component {
                 id = "custom_gif_div"
               >
                 <div className="img-holder">
-                  <img src={second_pannel_nn} alt="media" id="custom_gif" />
-                  {/* <video Controls Autoplay="autoplay">
-                    <source src={second_pannel_MOV} type="video/mov"/>
-                  </video> */}
-                  {/* <embed src={second_pannel_MOV} CONTROLLER="true" LOOP="false" AUTOPLAY="true" name="IBM Video"></embed> */}
-
-                  {/* <img
-                    src={img6}
-                    alt="shape"
-                    className="shapes shape-six"
-                  /> */}
+                  <img src={second_pannel_nn} alt="Chain Flow" id="custom_gif" />
                 </div>
-                {/* img-holder */}
               </div>
-              {/* End .col */}
 
               <div
                 className="col-xl-4 col-lg-6 ml-auto"
@@ -91,9 +77,6 @@ export default class SecondPannel extends React.Component {
                     We bridge the missing pieces in your supply chain.
 
                   </blockquote>
-                  {/* <h6>
-                    Bostami Hasan <span>CEO & Founder deksi</span>
-                  </h6> */}
                   <Link to="/#" className="theme-btn-two mt-45 md-mt-30" onClick={()=>this.gtag_report_conversion('https://calendly.com/bizgamsupport/effybuy')}>
                     {" "}
                     <PopupButton
@@ -123,9 +106,7 @@ export default class SecondPannel extends React.Component {
                     }}></CalendlyEventListener>
                   
                 </div>
-                {/* /.quote-wrapper */}
               </div>
-              {/* End .col */}
             </div>
           </div>
         </div>

@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
 import '../Blogs/blog.css'
-import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from 'swiper';
-import { Link } from "react-router-dom";
 import automate_your_purchase from '../Blogs/Blog_images/webinar_automate_your.jpg';
-
-
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
@@ -18,14 +14,10 @@ export default class Blog_6 extends Component {
     render() {
         return (
             <div className="individual_blog_main_div">
-                {/* <div className="individual_blog_title_div">
-                    Do You know the No. #1 tool available to increase your profits?
-                </div> */}
                 <div className="individual_blog_date">
                     18 Oct 2021
                 </div>
                 <div className="individual_blog_image">
-                    {/* Do You know the No. #1 tool available to increase your profits? */}
                     <img src={automate_your_purchase} alt="automate_your_purchase"/>
                 </div>
 
@@ -101,47 +93,6 @@ export default class Blog_6 extends Component {
                     Do join us for the game changing webinar to know about purchase savings.
                 </div>
 
-                {/* <div className="individual_blog_paragraph" >
-                    <Link to="/EffyBuy/wb">Register Now</Link>
-                </div> */}
-
-                {/* <div className="individual_blog_other_blogs_main_div">
-
-                    <Swiper navigation={true} className="mySwiper">
-                        <SwiperSlide>
-                            <div className="individual_blog_other_blogs_display_Div" style={{"display":"flex","justifyContent":"space-evenly","width":"100%","alignItems":"center"}}>
-                                <div className="individual_div_other_blog_single" style={{"width":"40%"}}>
-                                    <Link to="/EffyBuy/resources/blog/blog_six" style={{"textDecoration":"none"}}>
-                                        <div className="individual_div_other_blog_single_blog_card_image">
-                                            <img src={number_one_tool} alt="three_simple_tips"/>
-                                        </div>
-                                        <div className="individual_div_other_blog_single_blog_card_title">
-                                            Do You know the No. #1 tool available to increase your profits?
-                                        </div>
-                                        <div className="individual_div_other_blog_single_blog_card_desc">
-                                            You may be aware whether a wholesaler or retailer, direct sale or a large multilevel chain, 
-                                            the need always is to build good relationships with your...
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className="individual_div_other_blog_single"style={{"width":"40%"}}>
-                                    <Link to="/EffyBuy/resources/blog/blog_nine" style={{"textDecoration":"none"}}>
-                                        <div className="individual_div_other_blog_single_blog_card_image">
-                                            <img src={five_tips} alt="Common_challenge_img"/>
-                                        </div>
-                                        <div className="individual_div_other_blog_single_blog_card_title">
-                                            Top 5 tips – Increase profits with EffyBuy Tool
-                                        </div>
-                                        <div className="individual_div_other_blog_single_blog_card_desc">
-                                            As a supplier, you may be required to work with different suppliers on daily basis. So you 
-                                            may be required to lots and lots of communication that...
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                    </Swiper>
-                </div> */}
             </div>
         )
     }

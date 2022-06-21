@@ -1,9 +1,7 @@
 import React from "react";
-import Additional_Safety from '../../assets/images/icon/dataSecurity/Additional_Safety.svg'
-import End_to_End  from '../../assets/images/icon/dataSecurity/End_to_End.svg'
-import Multi_level  from '../../assets/images/icon/dataSecurity/Multi_level.svg'
-import Type_II  from '../../assets/images/icon/dataSecurity/Type_II.svg'
-import anytime_backup  from '../../assets/images/icon/dataSecurity/anytime_backup.svg'
+import End_to_End  from '../../assets/images/icon/dataSecurity/End_to_End_Encryption.webp'
+import Multi_level  from '../../assets/images/icon/dataSecurity/Multi_level_Authentication.webp'
+import Type_II  from '../../assets/images/icon/dataSecurity/hosted_Tier_IV_SSAE_16_Type_II.webp'
 
 const FeaturesContent = [
   {
@@ -11,37 +9,22 @@ const FeaturesContent = [
     title: "Hosted on Tier IV SSAE 16 Type II Data Centre",
     desc: ` Deski Web offers a complete lineup of features from any
       major browser.`,
+      altTag:"Hosted on Tier IV SSAE 16 Type II"
   },
   {
     img: End_to_End,
     title: "End-to-End Encryption",
     desc: ` Lorem ipsum began as scrambl nonsensical Latin derived from
       Cicero's quis`,
+      altTag:"End to End Encryption"
   },
   {
     img: Multi_level,
     title: "Multi-level authentication for data access",
     desc: ` Creation timelines for the standard lorem ipsum passage
       vary, with qius some citing.`,
+      altTag:"Multilevel Authentication"
   },
-  // {
-  //   img: Additional_Safety,
-  //   title: "Additional Safety of AWS Cloud",
-  //   desc: ` Lorem ipsum began as scrambl nonsensical Latin derived from
-  //     Cicero's quis`,
-  // },
-  // {
-  //   img: "98",
-  //   title: "100% save",
-  //   desc: ` Lorem ipsum was purposefully designed to have no meaning,
-  //     but appear like text`,
-  // },
-  // {
-  //   img: anytime_backup,
-  //   title: "Anytime data backup",
-  //   desc: `  Letraset's dry-transfer sheets later entered the digital
-  //     world via Aldus PageMaker.`,
-  // },
 ];
 const FifthPannel = () => {
   return (
@@ -56,7 +39,6 @@ const FifthPannel = () => {
               </h3>
               </div>
             <div className="row">
-              {/* <FancyFeatureSeventeen /> */}
               {FeaturesContent.map((val, i) => (
         <div
           className="col-lg-4 col-sm-6"
@@ -66,18 +48,15 @@ const FifthPannel = () => {
         >
           <div className="block-meta">
             <div className="icon d-flex align-items-end">
-              <img src={`${val.img}`} style={{"width":"70px"}} alt="icon" />
+              <img src={`${val.img}`} style={{"width":"70px"}} alt={val.altTag} />
             </div>
             <h4>{val.title}</h4>
-            {/* <p>{val.desc}</p> */}
           </div>
         </div>
-        // .block-meta
       ))}
             </div>
           </div>
         </div>
-        {/* /.bg-wrapper */}
       </div>
       
     </>

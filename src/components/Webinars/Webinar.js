@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './webinar.css'
 import { Link } from "react-router-dom";
 import Automate_your_purchase from '../Blogs/Blog_images/Automate_your_purchase.jpg'
+import DocumentMeta from 'react-document-meta';
 
 const BlogContent = [
     {
@@ -9,8 +10,9 @@ const BlogContent = [
       tag: "Webinar",
       iii: Automate_your_purchase,
       title: `Automate your purchase process to save 5-10% more `,
-      routePath: "/EffyBuy/resources/webinar/webinar_one",
+      routePath: "/webinars/webinar_one",
       dealyAnimation: "50",
+      altTag:"Automate your Purchase Process to save more"
     }
 ]
 
@@ -19,13 +21,19 @@ export default class Blog extends Component {
         window.scrollTo(0, 0)
     }
     render() {
-        return (
+      const meta = {
+        title: 'Webinars - Effybuy',
+        description: "Effybuy's webinars Provided additional Information about Automate RFP Process.",
+        meta: {
+          charset: 'utf-8',
+          // name: {
+          //   keywords: 'react,meta,document,html,tags'
+          // }
+        }
+      };
             
-            <>
-            <div className="feature-blog-one blog-page-bg">
-        <div className="shapes shape-one"></div>
-        <div className="shapes shape-two"></div>
-        <div className="shapes shape-three"></div>
+        return (
+          <DocumentMeta {...meta}>
         <div className="container">
           <div className="row">
           {BlogContent.map((item, i) => (
@@ -39,7 +47,7 @@ export default class Blog extends Component {
           <div className="post-meta">
             <img
               src={`${item.iii}`}
-              alt="media"
+              alt={item.altTag}
               className="image-meta"
             />
             <div className="tag">{item.tag}</div>
@@ -60,9 +68,7 @@ export default class Blog extends Component {
       ))}
           </div>
         </div>
-      </div>
-            
-            </>
+        </DocumentMeta>
 
         )
     }

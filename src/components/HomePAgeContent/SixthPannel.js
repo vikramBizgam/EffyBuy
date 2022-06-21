@@ -34,11 +34,6 @@ const FaqContent = [
     so you can make changes to your plan whenever you need to.`,
     expand: "c",
   },
-//   {
-//     title: "Is ios app available for the iphone?",
-//     desc: `mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch Et is vero incorrupte eos deserunt quaeren.`,
-//     expand: "d",
-//   },
 ];
 const FaqContentTwo = [
   {
@@ -60,11 +55,6 @@ const FaqContentTwo = [
     encryption and intrusion detection and prevention technologies.`,
     expand: "g",
   },
-//   {
-//     title: "What's the last dat of this offer?",
-//     desc: `mea case duis tollit et. Etiam nusquam set minium eu sea, ei tale paulo elab. Noluisse mnesarch Et is vero incorrupte eos deserunt quaeren.`,
-//     expand: "h",
-//   },
 ];
 
 export default function SixthPannel() {
@@ -115,11 +105,8 @@ export default function SixthPannel() {
                   </span>
                 </h2>
               </div>
-              {/* End .col */}
             </div>
           </div>
-          {/* End title */}
-          {/* <FaqClassic /> */}
           <div className="accordion-style-four">
       <div className="faq-wrraper">
         <div className="row">
@@ -138,18 +125,15 @@ export default function SixthPannel() {
                           </h5>
                         </AccordionItemButton>
                       </AccordionItemHeading>
-                      {/* Accordion Heading */}
                       <AccordionItemPanel className="card-body fadeInUp">
                         <p>{item.desc}</p>
                       </AccordionItemPanel>
-                      {/* Accordion Body Content */}
                     </AccordionItem>
                   </div>
                 ))}
               </div>
             </Accordion>
           </div>
-          {/* End.col */}
 
           <div className="col-lg-6">
             <Accordion allowZeroExpanded>
@@ -166,11 +150,9 @@ export default function SixthPannel() {
                           </h5>
                         </AccordionItemButton>
                       </AccordionItemHeading>
-                      {/* Accordion Heading */}
                       <AccordionItemPanel className="card-body fadeInUp">
                         <p>{item.desc}</p>
                       </AccordionItemPanel>
-                      {/* Accordion Body Content */}
                     </AccordionItem>
                   </div>
                 ))}

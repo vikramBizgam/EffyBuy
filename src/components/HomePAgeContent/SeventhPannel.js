@@ -1,9 +1,6 @@
 import React from "react";
-// import img1 from '../../assets/images/shape/114.svg'
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import axios from 'axios';
-
-
 
 
 class  PricingThree extends React.Component {
@@ -22,6 +19,7 @@ class  PricingThree extends React.Component {
         skewClass: "skew-right",
         desc:"Enjoy your free trial",
         bgColor: "#fbf3e5",
+        href:"https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT",
         priceList: [
           {
             list: "Account Setup",
@@ -43,11 +41,6 @@ class  PricingThree extends React.Component {
             list: "Savings Dashboard",
             listClass: "",
           },
-          
-          // {
-          //   list: "Notification Activation",
-          //   listClass: "",
-          // },
         ],
         animatinDelay: "100",
       },
@@ -64,6 +57,7 @@ class  PricingThree extends React.Component {
         skewClass: "skew-left",
         desc:"Everything in FREE TRIAL +",
         bgColor: "#d4fdf1",
+        href:"https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT",
         priceList: [
           {
             list: "Reverse Auction",
@@ -77,10 +71,6 @@ class  PricingThree extends React.Component {
             list: "Forward Auction",
             listClass: "",
           },
-          // {
-          //   list: "Auction OTP",
-          //   listClass: "",
-          // },
           {
             list: "1 Access Control",
             listClass: "",
@@ -89,11 +79,6 @@ class  PricingThree extends React.Component {
             list: "Auction OTP",
             listClass: "",
           },
-          
-          // {
-          //   list: "Data security",
-          //   listClass: "disable",
-          // },
         ],
         animatinDelay: "200",
       },
@@ -111,6 +96,7 @@ class  PricingThree extends React.Component {
         desc:"Everything in STARTUP +",
         bgColor: "#dbf7ff",
         activeItem: "active",
+        href:"https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT",
         priceList: [
           {
             list: "Messages to Supplier",
@@ -124,10 +110,6 @@ class  PricingThree extends React.Component {
             list: "Dedicated Account Manager",
             listClass: "",
           },
-          // {
-          //   list: "Phone Support",
-          //   listClass: "",
-          // },
           {
             list: "3 Access Controls",
             listClass: "",
@@ -146,6 +128,7 @@ class  PricingThree extends React.Component {
         skewClass: "skew-right",
         desc:"Everything in PROFESSIONAL +",
         bgColor: "#ffe3e3",
+        href:"https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT",
         priceList: [
           {
             list: "Multiple Access Control",
@@ -167,14 +150,6 @@ class  PricingThree extends React.Component {
             list: "Barcode Integration",
             listClass: "",
           },
-          // {
-          //   list: "Ticketing system",
-          //   listClass: "disable",
-          // },
-          // {
-          //   list: "Data security",
-          //   listClass: "disable",
-          // },
         ],
         animatinDelay: "400",
       },
@@ -183,15 +158,13 @@ class  PricingThree extends React.Component {
 
   componentDidMount(){
     window.scrollTo(0, 0)
-    document.title="EffyBuy | Pricing"
+    // document.title="EffyBuy | Pricing"
     // let url2 = 'https://extreme-ip-lookup.com/json/'
     // let url2 = 'https://geolocation-db.com/json/f9902210-97f0-11eb-a459-b997d30983f1'
     let url2 = 'https://api.ipregistry.co/?key=tryout'
 
 axios.get(url2)
 .then((res) => {
-    // alert(res.data.location.country.code)
-    // console.log(res)
     if(res.data.location.country.code === 'IN'){
         this.setState(prevState => {
           let NewObj = Object.assign({}, prevState.PricingContent);  
@@ -287,6 +260,8 @@ axios.get(url2)
     
 }
   render(){
+
+          
   return (
     <div className="pricing-section-six pt-200 md-pt-100" id="pricing">
         <div className="container" style={{"overflow":"hidden"}}>
@@ -297,12 +272,9 @@ axios.get(url2)
                 Affordability? We’ve got you <span>covered.</span>
                 </h2>
               </div>
-              {/* /.title-style-six */}
             </div>
           </div>
-          {/* End .row */}
         </div>
-        {/* End .container */}
         <Tabs>
       <TabList className="nav nav-tabs justify-content-center pricing-nav-four">
         <Tab>Monthly</Tab>
@@ -322,9 +294,6 @@ axios.get(url2)
           key={i}
         >
           <div className={`pr-table-wrapper ${val.activeItem}`}>
-            {/* <div className="discount">
-              {val.title}
-            </div> */}
             <div className="pack-name" style={{ background: val.bgColor }}>
               {val.title}
             </div>
@@ -340,15 +309,13 @@ axios.get(url2)
                 </li>
               ))}
             </ul>
-            <a href="https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT" className="trial-button">
+            <a href={val.href} className="trial-button">
               Subscribe
             </a>
-            {/* <div className="trial-text">No card required, cancel any time</div> */}
           </div>
         </div>
       ))}
     </div>
-{/* ===== */}
 
 
         </TabPanel>
@@ -378,10 +345,9 @@ axios.get(url2)
                 </li>
               ))}
             </ul>
-            <a href="https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT" className="trial-button">
+            <a href={val.href} className="trial-button">
               Subscribe
             </a>
-            {/* <div className="trial-text">No card required, cancel any time</div> */}
           </div>
         </div>
       ))}
@@ -390,57 +356,7 @@ axios.get(url2)
       </div>
     </Tabs>
       </div>
-      
-      
-//       <div className="pricing-table-area-three">
-// <div className="pricing-section-three mt-250 mb-200 md-mt-100 md-mb-150">
-//           <div className="container">
-//       <div className="title-style-five text-center mb-50 md-mb-40">
-//             <h6>Our Pricing</h6>
-//             <div className="row">
-//               <div className="col-lg-9 m-auto">
-//                 <h2>Unbeatable prices, no contracts, simple & easy</h2>
-//               </div>
-//             </div>
-//           </div>
-//           <TabList className="nav nav-tabs justify-content-center pricing-nav-four">
-//         <Tab>Monthly</Tab>
-//         <Tab>Yearly</Tab>
-//       </TabList>
-//     <div className="row justify-content-center">
-//       {PricingContent.map((item, i) => (
-//         <div
-//           className="col-lg-3 col-md-6"
-//           key={i}
-//           data-aos="fade-up"
-//           data-aos-duration="1200"
-//           data-aos-delay={item.animatinDelay}
-//         >
-//           <div className={`pr-table-wrapper ${item.skewClass}`}>
-//             <div className={`pack-name font-slab ${item.packageName}`}>
-//               <span>{item.title}</span>
-//             </div>
-//             <div className="price font-slab">{item.price}</div>
-//             <p className="user-condition">{item.priceMeta}</p>
-//             <img src={img1} alt="shape" className="line" />
-//             <div style={{"fontSize":"15px","color":"black","marginBottom":"20px"}}>{item.desc}</div>
-//             <ul>
-//               {item.priceList.map((val, i) => (
-//                 <li className={val.listClass} key={i}>
-//                   {val.list}
-//                 </li>
-//               ))}
-//             </ul>
-//             <a href="#" className="subscribe-btn font-rubik">
-//               Subscribe Now
-//             </a>
-//           </div>
-//         </div>
-//       ))}
-//     </div>
-//     </div>
-//     </div>
-//     </div>
+  
   )};
 };
 

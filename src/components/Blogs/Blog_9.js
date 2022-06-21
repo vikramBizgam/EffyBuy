@@ -1,12 +1,8 @@
 import React, { Component } from 'react'
 import './blog.css'
-// import Common_challenge_img from './Blog_images/common_challenges.png'
-// import three_simple_tips from './Blog_images/three_simple_tips.jpg'
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from 'swiper';
 import { Link } from "react-router-dom";
-// import Automate_your_purchase from './Blog_images/Automate_your_purchase.jpg';
-// import automate_your_purchase from './Blog_images/webinar_automate_your.jpg';
 import five_tips from './Blog_images/five_tips.jpg'
 import automate_your_purchase from './Blog_images/webinar_automate_your.jpg';
 import number_one_tool from './Blog_images/number_one_tool.jpg'
@@ -28,8 +24,7 @@ export default class Blog_9 extends Component {
                     8 Nov 2021
                 </div>
                 <div className="individual_blog_image">
-                    {/* Do You know the No. #1 tool available to increase your profits? */}
-                    <img src={five_tips} alt="automate_your_purchase"/>
+                    <img src={five_tips} alt="Tips to Increase Profit with Effybuy"/>
                 </div>
 
                 <div className="individual_blog_paragraph">
@@ -186,30 +181,6 @@ export default class Blog_9 extends Component {
                                 </div>
                             </div>
                         </SwiperSlide>
-                        {/* <SwiperSlide>
-                                <div className="individual_div_other_blog_single"style={{"width":"40%"}}>
-                                    <Link to="/EffyBuy/resources/blog/blog_6" style={{"textDecoration":"none"}}>
-                                    <div className="individual_div_other_blog_single_blog_card_image">
-                                    <img src={Common_challenge_img} alt="number_one_tool"/>
-                                    </div>
-                                    <div className="individual_div_other_blog_single_blog_card_title">
-                                    Do You know the No. #1 tool available to increase your profits?
-                                    </div>
-                                    <div className="individual_div_other_blog_single_blog_card_desc">
-                                    You may be aware whether a wholesaler or retailer, direct sale or a large multilevel 
-                                    chain, the need always is to build good relationships with your suppliers...
-                                    </div>
-                                    </Link>
-                                </div>
-                            
-                        </SwiperSlide> */}
-                        {/* <SwiperSlide>Slide 3</SwiperSlide>
-                        <SwiperSlide>Slide 4</SwiperSlide>
-                        <SwiperSlide>Slide 5</SwiperSlide>
-                        <SwiperSlide>Slide 6</SwiperSlide>
-                        <SwiperSlide>Slide 7</SwiperSlide>
-                        <SwiperSlide>Slide 8</SwiperSlide>
-                        <SwiperSlide>Slide 9</SwiperSlide> */}
                     </Swiper>
                 </div>
             </div>

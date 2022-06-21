@@ -8,14 +8,7 @@ export default function Footer() {
           <div className="container">
             <FooterContent />
           </div>
-
-          {/* <div className="container">
-            <div className="bottom-footer">
-              <CopyRightThree />
-            </div>
-          </div> */}
         </div>
-        {/* /.lg-container */}
       </footer>
     )
 }

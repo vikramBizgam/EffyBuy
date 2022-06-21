@@ -72,26 +72,6 @@ export default function TryForFreeForm() {
                 hideLandingPageDetails: false,
               }})
               setLoading(false)
-        // .then((result) => {
-        //     console.log(result.text);
-        //     setLoading(false)
-        //     openPopupWidget({ url:"https://calendly.com/bizgamsupport/effybuy", styles:{
-        //       color:"white",
-        //       border:"none",
-        //       }, pageSettings:{
-        //         hideEventTypeDetails: false,
-        //         hideLandingPageDetails: false,
-        //       }});
-        //     }, (error) => {
-        //       console.log(error.text);
-        //       openPopupWidget({ url:"https://calendly.com/bizgamsupport/effybuy", styles:{
-        //         color:"white",
-        //         border:"none",
-        //         }, pageSettings:{
-        //           hideEventTypeDetails: false,
-        //           hideLandingPageDetails: false,
-        //         }});
-        // });
         var callback = function () {
           if (typeof(url) != 'undefined') {
             window.location = urlCal;

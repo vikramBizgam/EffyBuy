@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MegaMenu from "./mega-menu/MegaMenu";
 import MegaMenuMobile from "./mega-menu/MegaMenuMobile";
-import effybuy_logo_with_name from '../../assets/images/icon/effybuy_logo_with_name.png'
+import effybuy_logo_with_name from '../../assets/images/icon/effybuy_logo.webp'
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -29,7 +29,7 @@ const Header = () => {
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo">
             <Link to="/">
-              <img src={effybuy_logo_with_name} alt="brand logo" />
+              <img src={effybuy_logo_with_name} alt="EffyBuy Logo" />
             </Link>
           </div>
           {/* End Logo */}

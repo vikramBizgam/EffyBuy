@@ -1,17 +1,37 @@
 import React, { Component } from 'react'
 import './termsAndConditions.css'
+import DocumentMeta from 'react-document-meta';
+
+
 
 export default class TermsAndConditions extends Component {
     componentDidMount(){
         window.scrollTo(0, 0)
     }
     render() {
+        const meta = {
+            title: 'Terms & Conditions - EffyBuy',
+            description: "Read the Terms & Conditions applicable for all users. Unique terms are applicable for the User & Visitor, Several terms & conditions are completing each processing phase.",
+            meta: {
+              charset: 'utf-8',
+              // name: {
+              //   keywords: 'react,meta,document,html,tags'
+              // }
+            }
+          };
+                
         return (
+            <DocumentMeta {...meta}>
             <div className="Terms_and_conditions_main_div">
-                <div className="Terms_and_conditions_title_div">
-                    <div className="Terms_and_conditions_title">
+            <div className='title-style-seven text-center'>
+                        <h1 >
                         Terms and conditions
-                    </div>
+                        </h1>
+                    </div> 
+                <div className="Terms_and_conditions_title_div">
+                    {/* <div className="Terms_and_conditions_title">
+                        Terms and conditions
+                    </div> */}
                     <div className="Terms_and_conditions_updated">
                         Last updated: January 1st, 2022
                     </div>
@@ -271,6 +291,7 @@ export default class TermsAndConditions extends Component {
                     </ul>
                 </div>
             </div>
+            </DocumentMeta>
         )
     }
 }

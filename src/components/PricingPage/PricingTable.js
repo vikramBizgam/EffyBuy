@@ -17,7 +17,6 @@ export default class PricingTable extends Component {
         // const url = `${url2}`;
     axios.get(url2)
     .then((res) => {
-        // alert(res)
         if(res.data.country_code === 'IN'){
             this.setState({
                 symbol: '₹',
@@ -174,23 +173,6 @@ export default class PricingTable extends Component {
                             <td><span className="tick">&#10004;</span></td>
                         </tr>
 
-                        {/* <tr>
-                            <td>View reports</td>
-                            <td><span >1 Month History</span></td>
-                            <td><span >3 Month History</span></td>
-                            <td><span >12 Month History</span></td>
-                            <td><span >Lifetime Reports</span></td>
-                        </tr>
-
-                        <tr>
-                            <td>Chat With Supplier</td>
-                            <td><span className="notick">&#10008;</span></td>
-                            <td><span className="notick">&#10008;</span></td>
-                            <td><span className="tick">&#10004;</span></td>
-                            <td><span className="tick">&#10004;</span></td>
-                        </tr> */}
-
-
                         <tr>
                             <td colSpan="5" className="sep">Supplier Features</td>
                         </tr>
@@ -226,22 +208,6 @@ export default class PricingTable extends Component {
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                         </tr>
-
-                        {/* <tr>
-                            <td>Maximum Supplier Limit</td>
-                            <td><span >10</span></td>
-                            <td><span >30</span></td>
-                            <td><span >100</span></td>
-                            <td><span >unlimited</span></td>
-                        </tr>
-
-                        <tr>
-                            <td>Maximum Item List</td>
-                            <td><span >10</span></td>
-                            <td><span >10</span></td>
-                            <td><span >100</span></td>
-                            <td><span >unlimited</span></td>
-                        </tr> */}
 
                         <tr>
                             <td colSpan="5" className="sep">User Features</td>
@@ -307,7 +273,6 @@ export default class PricingTable extends Component {
 
                         <tr>
                             <td>Auction OTP</td>
-                            {/* <td><span className="tick">&#10004;</span></td> */}
                             <td><span className="notick">&#10008;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>

@@ -640,6 +640,12 @@ h6 {
   font-weight: 500;
   line-height: 1.32em;
 }
+.title-style-seven h1 {
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 1.32em;
+  padding-bottom: 20px;
+}
 .title-style-seven h2 span {
   position: relative;
   display: inline-block;
@@ -943,7 +949,7 @@ body .theme-btn-nine:hover {
   left: 0;
   right: 0;
   background: #fff;
-  padding: 30px 70px;
+  padding: 30px 70px 0px 70px;
   transition: all 0.4s ease-out;
   line-height: 1.7rem;
 }

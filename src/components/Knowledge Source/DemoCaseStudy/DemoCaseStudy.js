@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import './demoCaseStudy.css'
-import { Modal, Button } from "react-bootstrap";
-import image from './images/bull_case_study.jpg'
-// import image from '../../Blogs/Blog_images/common_challenges.png'
+import { Modal } from "react-bootstrap";
+import image from './images/bull_machine_case_study.webp'
 import emailjs from '@emailjs/browser';
+import DocumentMeta from 'react-document-meta';
+
 var elasticemail = require('elasticemail');
 var client = elasticemail.createClient({
   username: 'support@bizgam.com',
@@ -103,14 +104,21 @@ export default class PPT extends Component {
           });
       }
 
-    // handleSubmit(e){
-    //     e.preventDefault();
-    //     emailjs.sendForm('service_v4tb7kr', 'template_i47ltfq', e.target, 'xXOyE59OsQ8r8nNSH')
-    //     window.open('https://docs.google.com/presentation/d/1b7HVB30WXDv5ErySK666yB23M5VqW1mY/export?format=pdf','_blank');
-    // }
     render() {
+        const meta = {
+            title: 'Our Case Study - EffyBuy',
+            description: "Checkout our RFP Management Software CaseStudy",
+            meta: {
+              charset: 'utf-8',
+              // name: {
+              //   keywords: 'react,meta,document,html,tags'
+              // }
+            }
+          };
+                
         return (
-            <div className="knowledge_source_main_div">
+            // <div className="knowledge_source_main_div">
+            <DocumentMeta {...meta}>
             <div className="feature-blog-one" style={{"marginTop":"50px"}}>
             <div className="shapes shape-two"></div>
             <div className="shapes shape-three"></div>
@@ -126,7 +134,7 @@ export default class PPT extends Component {
                         <div className="knowledgesorce">
                             <img
                             src={image}
-                            alt="media"
+                            alt="Case Study - Bull Machine"
                             className="image-meta"
                             />
                             <h3>
@@ -234,8 +242,7 @@ export default class PPT extends Component {
                 </div>
             </div>
         </div>
-        </div>
-
+        </DocumentMeta>
            
         )
     }

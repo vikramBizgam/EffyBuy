@@ -4,7 +4,6 @@ import about_us_img from '../../assets/images/media/about_us.png'
 import Anup from '../../assets/images/media/anup_agarwal.jpg'
 import Parthiban from '../../assets/images/media/parthiban.jpeg'
 import jebanesan from '../../assets/images/media/jebanesan.jpg'
-// import hhd from '../../assets/images/media/'
 
 
 export default class Aboutus extends Component {
@@ -119,19 +118,7 @@ export default class Aboutus extends Component {
                                 Chairman & Director
                             </div>
                             <div className="about_us_our_guiding_force_card_social">
-                                {/* <IconButton>
-
-                                <Fab color="primary" aria-label="add">
-                                    <AddIcon />
-                                </Fab>
-                                </IconButton> */}
                                 <div>
-                                    {/* <a href="/EffyBuy/about_us" rel="noreferrer" target="_blank">
-                                        <button type="button" class="btn btn-li"><i class="fa fa-linkedin"></i></button>
-                                    </a> */}
-                                    {/* <a href="https://www.linkedin.com/in/anup-agarwal/" rel="noreferrer" target="_blank">
-                                        <button type="button" class="btn btn-li"><i class="fa fa-linkedin"></i></button>
-                                    </a> */}
                                 </div>
                                 <div>
                                     <a href="mailto:admin@bizgam.com">
@@ -160,12 +147,6 @@ export default class Aboutus extends Component {
                                 Director
                             </div>
                             <div className="about_us_our_guiding_force_card_social">
-                                {/* <IconButton>
-
-                                <Fab color="primary" aria-label="add">
-                                    <AddIcon />
-                                </Fab>
-                                </IconButton> */}
                                 <div>
                                     <a href="https://www.linkedin.com/in/anup-agarwal/" rel="noreferrer" target="_blank">
                                         <button type="button" class="btn btn-li"><i class="fab fa-linkedin-in"></i></button>
@@ -196,12 +177,6 @@ export default class Aboutus extends Component {
                                 Director & CTO
                             </div>
                             <div className="about_us_our_guiding_force_card_social">
-                                {/* <IconButton>
-
-                                <Fab color="primary" aria-label="add">
-                                    <AddIcon />
-                                </Fab>
-                                </IconButton> */}
                                 <div>
                                 <a href="https://www.linkedin.com/in/jebanesan-croos-77373723/" rel="noreferrer" target="_blank">
                                         <button type="button" class="btn btn-li"><i class="fab fa-linkedin-in"></i></button>

@@ -29,7 +29,7 @@
 }
 @media (min-width: 1200px) and (max-width: 1450px) {
   .theme-main-menu {
-    padding: 30px 40px;
+    padding: 30px 40px 0px 40px;
   }
   .theme-menu-two .navbar {
     padding-right: 18%;
@@ -215,7 +215,7 @@
 /*(max-width: 1199px)*/
 @media (min-width: 992px) and (max-width: 1199px) {
   .theme-main-menu {
-    padding: 30px 25px;
+    padding: 30px 25px 0px 25px;
   }
   .hero-banner-two .container {
     padding: 0 25px;
@@ -440,6 +440,9 @@
   .title-style-seven h2 {
     font-size: 58px;
   }
+  .title-style-seven h1 {
+    font-size: 63px;
+  }
   .hero-banner-eight .hero-heading {
     font-size: 75px;
   }
@@ -517,6 +520,9 @@
   }
   .title-style-seven h2 {
     font-size: 38px;
+  }
+  .title-style-seven h1 {
+    font-size: 42px;
   }
   .title-style-six .text-xs {
     font-size: 18px;

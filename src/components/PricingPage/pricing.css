@@ -228,7 +228,7 @@
 .pricing_brand_promise_logo{
     position: absolute;
     width: 20%;
-    top: 8%;
+    top: 11%;
     right: 4%;
     transform: rotate(-10deg);
 }
@@ -251,7 +251,7 @@
 
 @media only screen and (max-width: 1130px){
     .pricing_brand_promise_logo{
-        top: 8%;
+        top: 11%;
         right: 5%;
     }
     
@@ -259,7 +259,7 @@
 @media only screen and (max-width: 1000px){
     .pricing_brand_promise_logo{
         right: 6%;
-        top: 8%;
+        top: 11%;
     }
     /* .pricing_brand_promise_logo > img{
         width: 200px;
@@ -267,7 +267,7 @@
 }
 @media only screen and (max-width: 930px){
     .pricing_brand_promise_logo{
-        top: 7%;
+        top: 10%;
         right: 2%;
     }
     .pricing_brand_promise_logo > img{
@@ -276,13 +276,13 @@
 }
 @media only screen and (max-width: 793px){
     .pricing_brand_promise_logo{
-        top: 8%;
+        top: 10%;
         right: 3%;
     }
 }
 @media only screen and (max-width: 738px){
     .pricing_brand_promise_logo{
-        top: 8%;
+        top: 10%;
         right: 0%;
     }
     .pricing_brand_promise_logo > img{

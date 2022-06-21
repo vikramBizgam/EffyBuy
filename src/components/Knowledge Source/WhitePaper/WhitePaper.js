@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './whitePaper.css'
-import { Modal, Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import image from '../../Blogs/Blog_images/common_challenges.png'
 
 

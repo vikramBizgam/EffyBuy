@@ -33,7 +33,6 @@ export default class EighthPannel extends React.Component{
                 </h2>
                 <p>Try Now - One month free trial.</p>
               </div>
-              {/*  /.title-style-six */}
             </div>
           </div>
           <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
@@ -61,28 +60,9 @@ export default class EighthPannel extends React.Component{
                       window.open('https://www.effybuy.com/EffyBuy/calendly_conformation');
                     }
                     }}></CalendlyEventListener>
-              {/* <div className={click1 ? "dropdown-menu  show" : "dropdown-menu"}>
-                <a
-                  className="dropdown-item d-flex align-items-center"
-                  href="#"
-                  onClick={handleClick1}
-                >
-                  <img src="images/icon/103.svg" alt="icon" />
-                  <span>IOS & Android</span>
-                </a>
-                <a
-                  className="dropdown-item d-flex align-items-center"
-                  href="#"
-                  onClick={handleClick1}
-                >
-                  <img src="images/icon/104.svg" alt="icon" />
-                  <span>Mac & Windows</span>
-                </a>
-              </div> */}
             </div>
           </div>
         </div>
-        {/*  /.container */}
         <img
           src={img1}
           alt="shape"

@@ -4,120 +4,121 @@ import PPT from './PPT/PPT.js'
 import WhitePaper from './WhitePaper/WhitePaper'
 import Ebooks from './E_books/Ebooks'
 import DemoCaseStudy from './DemoCaseStudy/DemoCaseStudy'
+import Blogs from '../Blogs/Blog'
+import Webinar from '../Webinars/Webinar'
+import { Link } from 'react-router-dom'
 
 export default class KnowledgeSource extends Component {
     state={
-        show_ebook:false,
+        show_blogs:false,
         show_ppt:false,
-        show_whitepaper:true,
-        show_case_studies:false
+        show_webinar:false,
+        show_case_studies:true,
     }
 
     componentDidMount(){
+        window.scrollTo(0, 0)
         let loc = this.props.location
-        // this.setState({
-        //     loc:loc
-        // })
-        if(loc === '/EffyBuy/resources/ebooks'){
+        if(loc === '/resources/blog'){
             this.setState({
-                show_ebook:true,
+                show_blogs:true,
                 show_ppt:false,
-                show_whitepaper:false,
+                show_webinar:false,
                 show_case_studies:false,
-                ebook_class:'active'
+                blog_class:'active'
             })
-        }else if(loc === '/EffyBuy/resources/case_studies'){
+        }else if(loc === '/resources/webinar'){
             this.setState({
-                show_ebook:false,
+                show_blogs:false,
                 show_ppt:false,
-                show_whitepaper:false,
-                show_case_studies:true,
-                case_study_class:'active'
+                show_webinar:true,
+                show_case_studies:false,
+                webinar_class:'active'
             })
-        }else if(loc === '/EffyBuy/resources/ppts'){
+        }else if(loc === '/resources/ppt'){
             this.setState({
-                show_ebook:false,
+                show_blogs:false,
                 show_ppt:true,
-                show_whitepaper:false,
+                show_webinar:false,
                 show_case_studies:false,
                 ppt_class:'active'
             })
         }else{
             this.setState({
-                show_ebook:false,
+                show_blogs:false,
                 show_ppt:false,
-                show_whitepaper:true,
-                show_case_studies:false,
-                white_paper_class:'active'
+                show_webinar:false,
+                show_case_studies:true,
+                case_study_class:'active'
             })
         }
     }
 
-    // componentDidUpdate(_,prevState){
-    //     if (prevState.loc !== this.state.loc) {
-    //         alert("changed")
-    //       }
-    // }
-
-    ebook(){
+    blog(){
         this.setState({
-            show_ebook:true,
+            show_blogs:true,
             show_ppt:false,
-            show_whitepaper:false,
+            show_webinar:false,
             show_case_studies:false
         })
     }
     ppt(){
         this.setState({
-            show_ebook:false,
+            show_blogs:false,
             show_ppt:true,
-            show_whitepaper:false,
+            show_webinar:false,
             show_case_studies:false
         })
     }
-    whitepaper(){
+    webinar(){
         this.setState({
-            show_ebook:false,
+            show_blogs:false,
             show_ppt:false,
-            show_whitepaper:true,
+            show_webinar:true,
             show_case_studies:false
         })
     }
     casestudy(){
         this.setState({
-            show_ebook:false,
+            show_blogs:false,
             show_ppt:false,
-            show_whitepaper:false,
+            show_webinar:false,
             show_case_studies:true
         })
     }
 
     render() {
-        // let check_location = this.props.location
-        // alert(check_location)
         return (
             <div className="knowledge_source_main_div">
-                {/* <div className="knowledge_source_title_div">
-                    Knowledge Source
+
+                <div className="btn-group" data-toggle="buttons" >
+                    <label className={`btn ` + this.state.case_study_class} onClick={()=>{this.casestudy()}}>
+                        <Link to='/resources/case_studies'>
+                        <input type="radio" name="options" id="Case_study" />Case study
+                        </Link>
+                    </label>
+                    <label className={`btn ` + this.state.blog_class} onClick={()=>{this.blog()}}>
+                        <Link to='/resources/blog'>
+                        <input type="radio" name="options" id="Blogs"/>Blogs
+                        </Link>
+                    </label>
+                    <label className={`btn ` + this.state.ppt_class} onClick={()=>{this.ppt()}}>
+                        <Link to='/resources/ppt'>
+                        <input type="radio" name="options" id="PPTs"/> PPTs
+                        </Link>
+                    </label>
+                    <label className={`btn ` + this.state.webinar_class} onClick={()=>{this.webinar()}}>
+                        <Link to='/resources/webinar'>
+                        <input type="radio" name="options" id="Webinars" /> Webinars
+                        </Link>
+                    </label>
                 </div>
-                <div className="btn-group" data-toggle="buttons">
-                    <label className={"btn btn-light " + this.state.ebook_class} onClick={()=>{this.ebook()}}>
-                        <input type="radio" name="options" id="option3" autoComplete="off" defaultChecked={this.state.show_ebook === true} /> E-BOOK
-                    </label>
-                    <label className={"btn btn-light " + this.state.case_study_class} onClick={()=>{this.casestudy()}}>
-                        <input type="radio" name="options" id="option4" autoComplete="off" defaultChecked={this.state.show_case_studies === true}/> CASE STUDY
-                    </label>
-                    <label className={"btn btn-light " + this.state.ppt_class} onClick={()=>{this.ppt()}}>
-                        <input type="radio" name="options" id="option1" autoComplete="off" defaultChecked={this.state.show_ppt === true}/> PRESENTATION
-                    </label>
-                    <label className={"btn btn-light " + this.state.white_paper_class} onClick={()=>{this.whitepaper()}}>
-                        <input type="radio" name="options" id="option2" autoComplete="off" defaultChecked={this.state.show_whitepaper === true}/> WHITEPAPER
-                    </label>
-                </div> */}
-                {this.state.show_case_studies && <div ><DemoCaseStudy/></div>}
-                {this.state.show_ebook && <div><Ebooks/></div>}
-                {this.state.show_ppt && <div><PPT/></div>}
-                {this.state.show_whitepaper && <div><WhitePaper/></div>}
+                <div >
+                    {this.state.show_case_studies && <div style={{"marginTop":"50px"}}><DemoCaseStudy/></div>}
+                    {this.state.show_blogs && <div style={{"marginTop":"50px"}} className="feature-blog-one "><Blogs/></div>}
+                    {this.state.show_ppt && <div style={{"marginTop":"50px"}}><PPT/></div>}
+                    {this.state.show_webinar && <div style={{"marginTop":"50px"}} className="feature-blog-one "><Webinar/></div>}
+                </div>
             </div>
         )
     }

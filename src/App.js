@@ -11,6 +11,7 @@ const App = () => {
     AOS.init();
   }, []);
 
+ 
   return (
     <>
       {/* <ScrollToTop /> */}
