@@ -30,6 +30,7 @@ import WebinarOne from '../components/Webinars/Webinar_1'
 import CaseStudy from '../components/Knowledge Source/DemoCaseStudy/DemoCaseStudy'
 import Videos from '../components/Videos/Videos'
 import PricingCalculator from "../components/PricingCalculator/PricingCalculator";
+import EnterprisePlan from "../components/EnterprisePlan/EnterprisePlan";
 import PPT from '../components/Knowledge Source/PPT/PPT'
 import NotFound from "../components/NotFound/Notfound";
 
@@ -251,6 +252,8 @@ const Routes = () => {
             </Route>
         
             <Route exact path="/Effybuy/calc" component={PricingCalculator} />
+
+            {/* <Route exact path="/ent" component={EnterprisePlan} /> */}
 
             <Route exact path='/resources' >
                 <KnowledgeSource location={location.pathname}/>

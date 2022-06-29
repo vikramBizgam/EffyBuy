@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MegaMenu from "./mega-menu/MegaMenu";
 import MegaMenuMobile from "./mega-menu/MegaMenuMobile";
-import effybuy_logo_with_name from '../../assets/images/icon/effybuy_logo.webp'
+import effybuy_logo_with_name from '../../assets/images/icon/New_effybuy_logo_with_name.webp'
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);

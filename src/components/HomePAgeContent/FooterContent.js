@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import FormFooterSignup from "../Forms/FormFooterSignup";
-import effybuy_logo_with_name from '../../assets/images/icon/effybuy_logo_with_name.png'
+import effybuy_logo_with_name from '../../assets/images/icon/New_effybuy_logo_with_name.webp'
 import Chatbot from "./Chatbot";
 const socialContent = [
   {
