@@ -39,7 +39,7 @@ const NotFound = () => {
           </p>
 
           <Link
-            to="/EffyBuy"
+            to="/"
             className="back-home font-rubik d-flex align-items-center justify-content-center"
           >
             <span>Back to Home</span>

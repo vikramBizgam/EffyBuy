@@ -200,7 +200,7 @@ export default class Blog_5 extends Component {
                         <SwiperSlide>
                             <div className="individual_blog_other_blogs_display_Div" style={{"display":"flex","justifyContent":"space-evenly","width":"100%","alignItems":"center"}}>
                                 <div className="individual_div_other_blog_single" style={{"width":"40%"}}>
-                                    <Link to="/EffyBuy/resources/blog/blog_one" style={{"textDecoration":"none"}}>
+                                    <Link to="/blogs/blog_one" style={{"textDecoration":"none"}}>
                                         <div className="individual_div_other_blog_single_blog_card_image">
                                             <img src={three_simple_tips} alt="three_simple_tips"/>
                                         </div>
@@ -214,7 +214,7 @@ export default class Blog_5 extends Component {
                                     </Link>
                                 </div>
                                 <div className="individual_div_other_blog_single"style={{"width":"40%"}}>
-                                    <Link to="/EffyBuy/resources/blog/blog_six" style={{"textDecoration":"none"}}>
+                                    <Link to="/blogs/blog_six" style={{"textDecoration":"none"}}>
                                         <div className="individual_div_other_blog_single_blog_card_image">
                                             <img src={number_one_tool} alt="number_one_tool"/>
                                         </div>

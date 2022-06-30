@@ -142,7 +142,7 @@ export default class Blog_6 extends Component {
                         <SwiperSlide>
                             <div className="individual_blog_other_blogs_display_Div" style={{"display":"flex","justifyContent":"space-evenly","width":"100%","alignItems":"center"}}>
                                 <div className="individual_div_other_blog_single" style={{"width":"40%"}}>
-                                    <Link to="/EffyBuy/resources/blog/blog_eight" style={{"textDecoration":"none"}}>
+                                    <Link to="/blogs/blog_eight" style={{"textDecoration":"none"}}>
                                         <div className="individual_div_other_blog_single_blog_card_image">
                                             <img src={automate_your_purchase} alt="three_simple_tips"/>
                                         </div>
@@ -156,7 +156,7 @@ export default class Blog_6 extends Component {
                                     </Link>
                                 </div>
                                 <div className="individual_div_other_blog_single"style={{"width":"40%"}}>
-                                    <Link to="/EffyBuy/resources/blog/blog_five" style={{"textDecoration":"none"}}>
+                                    <Link to="/blogs/blog_five" style={{"textDecoration":"none"}}>
                                         <div className="individual_div_other_blog_single_blog_card_image">
                                             <img src={Common_challenge_img} alt="Common_challenge_img"/>
                                         </div>

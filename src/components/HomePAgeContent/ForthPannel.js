@@ -27,14 +27,14 @@ export default function ForthPannel() {
                     all your purchasing activities can be automated.
                   </p>
                   <Link
-                    to="/EffyBuy/rfq"
+                    to="/rfq"
                     className="d-flex align-items-center learn-more"
                   >
                     <span>Learn more about RFQ</span>
                     <img src={arrow} alt="screen" />
                   </Link>
                   <Link
-                    to="/EffyBuy/reverseAuction"
+                    to="/reverseAuction"
                     className="d-flex align-items-center learn-more"
                   >
                     <span>Learn more about Reverse Auction</span>
