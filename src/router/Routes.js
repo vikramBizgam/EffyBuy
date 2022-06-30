@@ -251,7 +251,7 @@ const Routes = () => {
                 </div>
             </Route>
         
-            <Route exact path="/Effybuy/calc" component={PricingCalculator} />
+            {/* <Route exact path="/Effybuy/calc" component={PricingCalculator} /> */}
 
             {/* <Route exact path="/ent" component={EnterprisePlan} /> */}
 
