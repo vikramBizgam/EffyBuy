@@ -253,7 +253,7 @@ const Routes = () => {
         
             {/* <Route exact path="/Effybuy/calc" component={PricingCalculator} /> */}
 
-            {/* <Route exact path="/ent" component={EnterprisePlan} /> */}
+            <Route exact path="/ent" component={EnterprisePlan} />
 
             <Route exact path='/resources' >
                 <KnowledgeSource location={location.pathname}/>

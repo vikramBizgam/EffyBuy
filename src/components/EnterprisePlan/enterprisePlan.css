@@ -55,8 +55,8 @@
 
 .enterprise_plan .list_class{
     border: 1px solid #AEAEAE;
-    border-radius: 52px!important;
-    padding: 20px 50px;
+    border-radius: 40px!important;
+    padding: 25px;
 }
 
 .enterprise_plan .list_class li{
@@ -65,13 +65,22 @@
 }
 
 .enterprise_plan .title{
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 700;
     color: black;
 }
 
 .enterprise_plan .plan_includes ul{
     padding-top: 20px;
+}
+
+.enterprise_plan .plan_includes ul li{
+    font-size: 15px;
+}
+
+.enterprise_plan .choose_your_title{
+    font-size: 25px;
+    color: black;
 }
 
 .enterprise_plan .responsive_titlee{
@@ -94,4 +103,17 @@
     .enterprise_plan h3{
         font-size: 20px
     ;}
+
+    .enterprise_plan .choose_your_title{
+        font-size: 16px;
+        color: black;
+    }
+
+    .enterprise_plan .choose_your_title > span{
+        display: block;
+    }
+
+    .enterprise_plan .title{
+        font-size: 20px;
+    }
 }
