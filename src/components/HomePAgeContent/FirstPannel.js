@@ -30,7 +30,7 @@ const FirstPannel = (props) => {
               <span>Automate </span> RFQ and Negotiation.
             </h1>
             <p className="hero-sub-heading">
-                Save 8-10% More In Each Purchase.
+                Save 8-10% More In Each Purchase
             </p>
             <FormDemo />
           </div>
