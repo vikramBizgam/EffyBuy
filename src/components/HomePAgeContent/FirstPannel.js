@@ -27,7 +27,7 @@ const FirstPannel = (props) => {
         <div className="row">
           <div className="col-lg-6">
             <h1 className="hero-heading">
-              <span>Automate </span> RFQ and Negotiation
+              <span>Automate </span> RFQ and Negotiation.
             </h1>
             <p className="hero-sub-heading">
                 Save 8-10% More In Each Purchase.
