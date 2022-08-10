@@ -11,6 +11,7 @@ import Video from '../HomePAgeContent/Video'
 import useDocumentTitle from '../useDocumentTitle'
 import first_pannel_image from '../../assets/images/FirstPannel.webp'
 import DocumentMeta from 'react-document-meta';
+import Testimonials from '../HomePAgeContent/Testimonials'
 
 
 
@@ -40,6 +41,7 @@ class HomePageContent extends React.Component {
                 <ForthPannel/>
                 <FifthPannel/>
                 <SeventhPannel/>
+                <Testimonials/>
                 <EighthPannel/>
                 <SixthPannel/>
             </>
