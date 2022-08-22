@@ -17,7 +17,7 @@ export default class Video extends Component {
             height='112%'
             controls={true}
             light={true}
-            playIcon={<button><i class="fab fa-youtube fa-4x" style={{"color":"red"}}></i></button>}
+            playIcon={<button><i className="fab fa-youtube fa-4x" style={{"color":"red"}}></i></button>}
             />
         </div>
     )
