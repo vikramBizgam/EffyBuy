@@ -108,60 +108,60 @@ export default function SixthPannel() {
             </div>
           </div>
           <div className="accordion-style-four">
-      <div className="faq-wrraper">
-        <div className="row">
-          <div className="col-lg-6">
-            <Accordion allowZeroExpanded>
+            <div className="faq-wrraper">
               <div className="row">
-                {FaqContent.map((item, i) => (
-                  <div className="col-lg-12" key={i}>
-                    <AccordionItem className="card">
-                      <AccordionItemHeading className="card-header">
-                        <AccordionItemButton>
-                          <h5 className="mb-0">
-                            <button className="btn btn-link">
-                              {item.title}
-                            </button>{" "}
-                          </h5>
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel className="card-body fadeInUp">
-                        <p>{item.desc}</p>
-                      </AccordionItemPanel>
-                    </AccordionItem>
-                  </div>
-                ))}
-              </div>
-            </Accordion>
-          </div>
+                <div className="col-lg-6">
+                  <Accordion allowZeroExpanded>
+                    <div className="row">
+                      {FaqContent.map((item, i) => (
+                        <div className="col-lg-12" key={i}>
+                          <AccordionItem className="card">
+                            <AccordionItemHeading className="card-header">
+                              <AccordionItemButton>
+                                <h5 className="mb-0">
+                                  <button className="btn btn-link">
+                                    {item.title}
+                                  </button>{" "}
+                                </h5>
+                              </AccordionItemButton>
+                            </AccordionItemHeading>
+                            <AccordionItemPanel className="card-body fadeInUp">
+                              <p>{item.desc}</p>
+                            </AccordionItemPanel>
+                          </AccordionItem>
+                        </div>
+                      ))}
+                    </div>
+                  </Accordion>
+                </div>
 
-          <div className="col-lg-6">
-            <Accordion allowZeroExpanded>
-              <div className="row">
-                {FaqContentTwo.map((item, i) => (
-                  <div className="col-lg-12" key={i}>
-                    <AccordionItem className="card">
-                      <AccordionItemHeading className="card-header">
-                        <AccordionItemButton>
-                          <h5 className="mb-0">
-                            <button className="btn btn-link">
-                              {item.title}
-                            </button>{" "}
-                          </h5>
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel className="card-body fadeInUp">
-                        <p>{item.desc}</p>
-                      </AccordionItemPanel>
-                    </AccordionItem>
-                  </div>
-                ))}
+                <div className="col-lg-6">
+                  <Accordion allowZeroExpanded>
+                    <div className="row">
+                      {FaqContentTwo.map((item, i) => (
+                        <div className="col-lg-12" key={i}>
+                          <AccordionItem className="card">
+                            <AccordionItemHeading className="card-header">
+                              <AccordionItemButton>
+                                <h5 className="mb-0">
+                                  <button className="btn btn-link">
+                                    {item.title}
+                                  </button>{" "}
+                                </h5>
+                              </AccordionItemButton>
+                            </AccordionItemHeading>
+                            <AccordionItemPanel className="card-body fadeInUp">
+                              <p>{item.desc}</p>
+                            </AccordionItemPanel>
+                          </AccordionItem>
+                        </div>
+                      ))}
+                    </div>
+                  </Accordion>
+                </div>
               </div>
-            </Accordion>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
         </div>
       </div>
       </div>

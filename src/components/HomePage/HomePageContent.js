@@ -12,6 +12,7 @@ import useDocumentTitle from '../useDocumentTitle'
 import first_pannel_image from '../../assets/images/FirstPannel.webp'
 import DocumentMeta from 'react-document-meta';
 import Testimonials from '../HomePAgeContent/Testimonials'
+import Testimonial2 from '../HomePAgeContent/Testimonial2'
 
 
 
@@ -41,7 +42,8 @@ class HomePageContent extends React.Component {
                 <ForthPannel/>
                 <FifthPannel/>
                 <SeventhPannel/>
-                <Testimonials/>
+                {/* <Testimonials/> */}
+                <Testimonial2/>
                 <EighthPannel/>
                 <SixthPannel/>
             </>

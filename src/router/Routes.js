@@ -45,7 +45,7 @@ const Routes = () => {
     return (
       <>
         {/* <Router> */}
-            {/* <Switch>
+            <Switch>
                 <Route path="/" component={Header} />
             </Switch>
             <Switch>
@@ -174,10 +174,10 @@ const Routes = () => {
             
             <Switch>
                 <Redirect to="/EffyBuy/404"  />
-            </Switch> */}
+            </Switch>
             
 
-        <Switch>
+        {/* <Switch>
             <Route path="/" component={Header} />
         </Switch>
 
@@ -251,7 +251,7 @@ const Routes = () => {
                 </div>
             </Route>
         
-            {/* <Route exact path="/Effybuy/calc" component={PricingCalculator} /> */}
+            <Route exact path="/Effybuy/calc" component={PricingCalculator} />
 
             <Route exact path="/ent" component={EnterprisePlan} />
 
@@ -283,11 +283,12 @@ const Routes = () => {
             <Route exact path="/EffyBuy/calendly_conformation" component={Thankyou} />
         
             <Redirect to="/404"  />
-            </Switch>
-            <Switch>
+        </Switch>
+
+        <Switch>
             <Route path="/" component={Footer} />
 
-            </Switch>
+        </Switch> */}
             
         {/* </Router> */}
       </>

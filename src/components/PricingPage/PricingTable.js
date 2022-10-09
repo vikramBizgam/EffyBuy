@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './pricingTable.css'
 import axios from 'axios';
+import { Link } from "react-router-dom";
+
 
 export default class PricingTable extends Component {
     state={
@@ -9,6 +11,7 @@ export default class PricingTable extends Component {
             yearlyStartupPrice:999,
             monthlyProfessionalPrice:4999,
             yearlyProfessionalPrice:2499,
+            showCommonFeatures:true
     }
 
     componentDidMount(){
@@ -75,19 +78,62 @@ export default class PricingTable extends Component {
         
         
     }
+    hideCommonFeatures(e){
+        if(e.target.checked === false){
+            this.setState({
+                showCommonFeatures : true
+            })
+        }else{
+            this.setState({
+                showCommonFeatures : false
+            })
+        }
+    }
+
     render() {
+
         return (
-            <div className="pricing_table_main_div table-responsive">
+            <div className="pricing_table_main_div table-responsive" style={{"width":"80%"}}>
 
 
                 <table className='table'>
-                    <thead className="pricing_table_plans">
-                        <tr>
-                        <th>Features</th>
-                        <th>FREE</th>
-                        <th>STARTUP</th>
-                        <th>PROFESSIONAL</th>
-                        <th>ENTERPRISE</th>
+                    <thead className="pricing_table_plans" style={{"borderBottom":"1px solid #f0f0f0!important"}}>
+                        <tr className='header_table'>
+                            <th className='pricing_table_plans_features'>
+                                <input type="checkbox" onClick={(e)=>{this.hideCommonFeatures(e)}}/><span style={{"marginLeft":"5px"}}>Hide common features</span>
+                            </th>
+                            <th>
+                                <div >FREE</div>
+                                <div style={{"margin":"20px 0"}}>
+                                    <a href='https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT' style={{"textDecorationStyle":"none"}}>
+                                        <button className='btn btn-primary'>Try Now</button>
+                                    </a>
+                                </div>
+                            </th>
+                            <th>
+                                <div >STARTUP</div>
+                                <div style={{"margin":"20px 0"}}>
+                                    <a href='https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT' style={{"textDecorationStyle":"none"}}>
+                                        <button className='btn btn-primary'>Try Now</button>
+                                    </a>
+                                </div>
+                            </th>
+                            <th>
+                                <div >PROFESSIONAL</div>
+                                <div style={{"margin":"20px 0"}}>
+                                    <a href='https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT' style={{"textDecorationStyle":"none"}}>
+                                        <button className='btn btn-primary'>Try Now</button>
+                                    </a>
+                                </div>
+                            </th>
+                            <th>
+                                <div >ENTERPRISE</div>
+                                <div style={{"margin":"20px 0"}}>
+                                    <a href='https://www.effybuy.com/bizgam20/apps/baf.php/B_OS_BAF_USER_REGISTER/EDIT' style={{"textDecorationStyle":"none"}}>
+                                        <button className='btn btn-primary'>Try Now</button>
+                                    </a>
+                                </div>
+                            </th>
                         </tr>
                     </thead>
 
@@ -143,7 +189,7 @@ export default class PricingTable extends Component {
 
                         <tr>
                             <td>Live Monitoring Of Auctions</td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
@@ -159,15 +205,15 @@ export default class PricingTable extends Component {
 
                         <tr>
                             <td>Manual Offers</td>
-                            <td><span className="notick">&#10008;</span></td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                         </tr>
 
                         <tr>
                             <td>Participants online or offline check</td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
@@ -187,7 +233,7 @@ export default class PricingTable extends Component {
 
                         <tr>
                             <td>Live Messages to Suppliers during Auction</td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
@@ -195,19 +241,19 @@ export default class PricingTable extends Component {
 
                         <tr>
                             <td>Change Step up/ Down price during Auction Live</td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                         </tr>
 
-                        <tr>
+                        {this.state.showCommonFeatures && <tr>
                             <td>User Manual & Videos</td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
-                        </tr>
+                        </tr>}
 
                         <tr>
                             <td colSpan="5" className="sep">User Features</td>
@@ -215,8 +261,8 @@ export default class PricingTable extends Component {
 
                         <tr>
                             <td>Buyer Group's Access to Buyer Accounts</td>
-                            <td><span className="notick">&#10008;</span></td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                         </tr>
@@ -263,74 +309,74 @@ export default class PricingTable extends Component {
                             <td colSpan="5" className="sep">Add-Ons Features</td>
                         </tr>
 
-                        <tr>
+                        {this.state.showCommonFeatures && <tr>
                             <td>Emails Notifications</td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
-                        </tr>
+                        </tr>}
 
                         <tr>
                             <td>Auction OTP</td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                         </tr>
 
-                        <tr>
+                        {this.state.showCommonFeatures && <tr>
                             <td>Notifications Activation</td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
-                        </tr>
+                        </tr>}
 
                         <tr>
                             <td>Auto Report Emailers</td>
-                            <td><span className="notick">&#10008;</span></td>
-                            <td><span className="notick">&#10008;</span></td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tickwithstar">&#10004;*</span></td>
                         </tr>
 
                         <tr>
                             <td>3rd Party API Integrations</td>
-                            <td><span className="notick">&#10008;</span></td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tickwithstar">&#10004;*</span></td>
                             <td><span className="tickwithstar">&#10004;*</span></td>
                         </tr>
 
                         <tr>
                             <td>Supplier URL Customizations</td>
-                            <td><span className="notick">&#10008;</span></td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tickwithstar">&#10004;*</span></td>
                             <td><span className="tickwithstar">&#10004;*</span></td>
                         </tr>
 
                         <tr>
                             <td>ASN Integrations</td>
-                            <td><span className="notick">&#10008;</span></td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tickwithstar">&#10004;*</span></td>
                             <td><span className="tickwithstar">&#10004;*</span></td>
                         </tr>
 
                         <tr>
                             <td>Barcode Integrations</td>
-                            <td><span className="notick">&#10008;</span></td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tickwithstar">&#10004;*</span></td>
                             <td><span className="tickwithstar">&#10004;*</span></td>
                         </tr>
 
                         <tr>
                             <td>Notification Message for Supplier Quotations</td>
-                            <td><span className="notick">&#10008;</span></td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tickwithstar">&#10004;*</span></td>
                             <td><span className="tickwithstar">&#10004;*</span></td>
                         </tr>
@@ -339,17 +385,17 @@ export default class PricingTable extends Component {
                             <td colSpan="5" className="sep">Reports</td>
                         </tr>
 
-                        <tr>
+                        {this.state.showCommonFeatures && <tr>
                             <td>Auction Saving Dashboard</td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
-                        </tr>
+                        </tr>}
                         
                         <tr>
                             <td>Detailed Saving Report & Monthly History</td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
@@ -357,7 +403,7 @@ export default class PricingTable extends Component {
 
                         <tr>
                             <td>Reports Downloads</td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span>pdf</span></td>
                             <td><span>pdf + excel</span></td>
                             <td><span>all formats</span></td>
@@ -365,9 +411,9 @@ export default class PricingTable extends Component {
 
                         <tr>
                             <td>Custom Reports</td>
-                            <td><span className="notick">&#10008;</span></td>
-                            <td><span className="notick">&#10008;</span></td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                         </tr>
 
@@ -376,21 +422,21 @@ export default class PricingTable extends Component {
                             <td colSpan="5" className="sep">Support</td>
                         </tr>
 
-                        <tr>
+                        {this.state.showCommonFeatures && <tr>
                             <td>Video Tutorials / User Manuals</td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
-                        </tr>
+                        </tr>}
 
-                        <tr>
+                        {this.state.showCommonFeatures && <tr>
                             <td>Activation / Trial Support</td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
-                        </tr>
+                        </tr>}
 
                         <tr>
                             <td>Custom Support</td>
@@ -402,8 +448,8 @@ export default class PricingTable extends Component {
 
                         <tr>
                             <td>Dedicated Account Manager</td>
-                            <td><span className="notick">&#10008;</span></td>
-                            <td><span className="notick">&#10008;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
+                            <td><span className="notick">&#10006;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                             <td><span className="tick">&#10004;</span></td>
                         </tr>

@@ -6,9 +6,29 @@
 }
 
 table { 
-  border-collapse:collapse; 
+  border-collapse:separate!important; 
+  /* border-collapse:collapse;  */
   table-layout:fixed; 
   width:100%;
+  border: 1px solid #f0f0f0!important;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 20px;
+ }
+
+table > thead > tr > th.pricing_table_plans_features{ 
+  width: 300px;
+  min-width: 300px;
+  font-weight: 400;
+  font-size: 15px;
+ }
+
+table > thead > tr.header_table > th:not(:first-child){ 
+  width: 150px;
+  min-width: 150px;
+ }
+
+.pricing_table_main_div > table > tbody > tr > td{ 
+  font-size: 15px;
  }
 /* th { background:#F5F5F5} */
 th { background:#F5F5F5; }
@@ -17,9 +37,13 @@ td, th {
   margin-left: 10px!important;
 }
 td,th { 
-  border:1px solid #DDD; 
+  border-top: none!important;
+  border-bottom: none!important;
   padding:10px!important; 
   empty-cells:show; }
+td:not(:last-child),th:not(:last-child) { 
+  border-right:1px solid #f0f0f0; 
+}
 td,th {
   text-align:left;
 }
@@ -30,14 +54,16 @@ td.default {
   display:table-cell;
 }
 .bg-purple {
-  border-top:3px solid #A32362;
+  /* border-top:3px solid #A32362; */
 }
 .bg-blue {
-  border-top:3px solid #0097CF;
+  /* border-top:3px solid #0097CF; */
 }
 .sep {
-  background:#F5F5F5;
+  background:#D4E0FF!important;
   font-weight:bold;
+  vertical-align: middle!important;
+  /* background-color: #D4E0FF; */
 }
 
 .additional_cost{
