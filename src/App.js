@@ -15,7 +15,7 @@ const App = () => {
   return (
     <>
       {/* <ScrollToTop /> */}
-      <Router basename="/">
+      <Router >
       <Routes />
       </Router>
       {/* <>
