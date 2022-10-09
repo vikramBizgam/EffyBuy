@@ -15,7 +15,7 @@ const App = () => {
   return (
     <>
       {/* <ScrollToTop /> */}
-      <Router basename="/EffyBuy">
+      <Router>
       <Routes />
       </Router>
       {/* <>
