@@ -5,26 +5,26 @@ import { Link } from "react-router-dom";
 const Resources = [
   {
     name: "BLOGS",
-    routerPath: "/EffyBuy/blogs",
+    routerPath: "/blogs",
     class:"fas fa-blog",
     desc:"Keep yourself updated with all things marketing"
   },
   {
     name: "SUCCESS STORIES",
-    // routerPath: "/",
-    routerPath: "/EffyBuy/resources/success_stories",
+    routerPath: "/",
+    // routerPath: "/EffyBuy/resources/success_stories",
     class:"fas fa-trophy",
     desc:"Seek how EffyBuy helps brands to evaluate customer experience",
   },
   {
     name: "PPT",
-    routerPath: "/EffyBuy/ppts",
+    routerPath: "/ppts",
     class:"fas fa-laptop-code",
     desc:"Get to know more about EffyBuy products through our presentations",
   },
   {
     name: "CASE STUDIES",
-    routerPath: "/EffyBuy/casestudy",
+    routerPath: "/casestudy",
     class:"fas fa-laptop-code",
     desc:"Take a look at what customers feel about our offerings",
   },
@@ -44,14 +44,14 @@ const Resources = [
   },
   {
     name: "WEBINARS",
-    routerPath: "/EffyBuy/webinars",
+    routerPath: "/webinars",
     // routerPath: "/EffyBuy/resources/wb",
     class:"fas fa-laptop",
     desc:"Highly engaging and personal way to connect with our experts",
   },
   {
     name: "VIDEOS",
-    routerPath: "/EffyBuy/videos",
+    routerPath: "/videos",
     // routerPath: "/EffyBuy/resources/videos",
     class:"fas fa-video",
     desc:"Create the most out of EffyBuy with our step-by-step videos",
@@ -78,7 +78,7 @@ const MegaMenu = () => {
         <ul className="dropdown-menu">
           
           <li>
-            <Link className="dropdown-item" to="/EffyBuy/rfp-rfq-software">
+            <Link className="dropdown-item" to="/rfp-rfq-software">
               {" "}
               <i className="far fa-sticky-note" style={{"marginRight":"10px"}}></i>
               RFP | RFQ
@@ -86,7 +86,7 @@ const MegaMenu = () => {
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item" to="/EffyBuy/reverse-auction-software">
+            <Link className="dropdown-item" to="/reverse-auction-software">
               {" "}
               <i className="fas fa-undo" style={{"marginRight":"10px"}}></i>
               REVERSE AUCTION
@@ -94,7 +94,7 @@ const MegaMenu = () => {
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item" to="/EffyBuy/EffySell">
+            <Link className="dropdown-item" to="/EffySell">
               {" "}
               <i className="fas fa-redo" style={{"marginRight":"10px"}}></i>
               EFFYSELL
@@ -102,7 +102,7 @@ const MegaMenu = () => {
             </Link>
           </li>
           <li>
-            <Link className="dropdown-item" to="/EffyBuy/freight-forwarder-software">
+            <Link className="dropdown-item" to="/freight-forwarder-software">
               {" "}
               <i className="fas fa-shipping-fast" style={{"marginRight":"10px"}}></i>
               LOGISTICS
@@ -134,7 +134,7 @@ const MegaMenu = () => {
         </a>
         <ul className="dropdown-menu">
           <li>
-            <Link className="dropdown-item" to="/EffyBuy/pricing">
+            <Link className="dropdown-item" to="/pricing">
               {" "}
               <i className="fas fa-money-check-alt" style={{"marginRight":"10px"}}></i>
               EFFYBUY

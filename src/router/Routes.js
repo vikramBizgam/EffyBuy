@@ -58,107 +58,148 @@ const Routes = () => {
                 <Redirect to="/EffyBuy/404"  />
             </Switch> */}
             <Switch>
-                <Route exact path="/EffyBuy/EffySell" component={EffySell} />
+                <Route exact path="/EffySell" component={EffySell} />
             </Switch>
             <Switch>
-                <Route exact path="/EffyBuy/Logistics" component={Logistics} />
+                <Route exact path="/freight-forwarder-software" component={Logistics} />
             </Switch>
             <Switch>
-                <Route exact path="/EffyBuy/rfq" component={Rfq} />
+                <Route exact path="/rfp-rfq-software" component={Rfq} />
             </Switch>
             <Switch>
-                <Route exact path="/EffyBuy/reverseAuction" component={ReverseAuction} />
+                <Route exact path="/reverse-auction-software" component={ReverseAuction} />
             </Switch>
             <Switch>
-                <Route exact path="/EffyBuy/resources/blogs">
+                {/* <Route exact path="/blogs">
                     <div className="feature-blog-one blog-page-bg"><Blogs/></div>
-                </Route>
+                </Route> */}
+                <Route exact path="/blogs">
+                <div className="feature-blog-one blog-page-bg">
+                    <div className='title-style-seven text-center'>
+                        <h1 >
+                            Blogs
+                        </h1>
+                    </div>
+                    <Blogs/>
+                </div>
+            </Route>
+            </Switch>
+            
+            <Switch>
+                <Route exact path="/blog/blog_one" component={BlogOne} />
             </Switch>
             <Switch>
-                <Route exact path="/EffyBuy/resources/blog/blog_one" component={BlogOne} />
+                <Route exact path="/blog/blog_two" component={BlogTwo} />
             </Switch>
             <Switch>
-                <Route exact path="/EffyBuy/resources/blog/blog_two" component={BlogTwo} />
+                <Route exact path="/blog/blog_three" component={BlogThree} />
             </Switch>
             <Switch>
-                <Route exact path="/EffyBuy/resources/blog/blog_three" component={BlogThree} />
+                <Route exact path="/blog/blog_four" component={Blogfour} />
             </Switch>
             <Switch>
-                <Route exact path="/EffyBuy/resources/blog/blog_four" component={Blogfour} />
+                <Route exact path="/blog/blog_five" component={Blogfive} />
             </Switch>
             <Switch>
-                <Route exact path="/EffyBuy/resources/blog/blog_five" component={Blogfive} />
+                <Route exact path="/blog/blog_six" component={BlogSix} />
             </Switch>
             <Switch>
-                <Route exact path="/EffyBuy/resources/blog/blog_six" component={BlogSix} />
+                <Route exact path="/blog/blog_seven" component={BlogSeven} />
             </Switch>
             <Switch>
-                <Route exact path="/EffyBuy/resources/blog/blog_seven" component={BlogSeven} />
+                <Route exact path="/blog/blog_eight" component={BlogEight} />
             </Switch>
             <Switch>
-                <Route exact path="/EffyBuy/resources/blog/blog_eight" component={BlogEight} />
-            </Switch>
-            <Switch>
-                <Route exact path="/EffyBuy/resources/blog/blog_nine" component={BlogNine} />
+                <Route exact path="/blog/blog_nine" component={BlogNine} />
             </Switch>
 
             <Switch>
-                <Route exact path="/EffyBuy/resources/webinars">
+                {/* <Route exact path="/EffyBuy/resources/webinars">
                     <div className="feature-blog-one blog-page-bg"><Webinar/></div>
-                </Route>
+                </Route> */}
+                <Route exact path="/webinars">
+                <div className="feature-blog-one blog-page-bg">
+                    <div className='title-style-seven text-center'>
+                        <h1 >
+                            Our Webinar
+                        </h1>
+                    </div>
+                    <Webinar/>
+                </div>
+            </Route>
             </Switch>
 
             <Switch>
-                <Route exact path="/EffyBuy/resources/webinar/webinar_one" component={WebinarOne} />
+                <Route exact path="/webinars/webinar_one" component={WebinarOne} />
             </Switch>
 
             <Switch>
-                <Route exact path="/EffyBuy/resources/videos" component={Videos} />
-            </Switch>
-
-
-            <Switch>
-                <Route exact path="/EffyBuy/ppts" ><div className="knowledge_source_main_div"><PPT/></div></Route>
-            </Switch>
-
-            <Switch>
-                <Route exact path="/EffyBuy/resources/caseStudy" ><div className="knowledge_source_main_div"><CaseStudy/></div></Route>
-            </Switch>
-
-            <Switch>
-                <Route exact path="/EffyBuy/calc" component={PricingCalculator} />
+                <Route exact path="/videos" component={Videos} />
             </Switch>
 
 
             <Switch>
-            <Route exact path='/EffyBuy/resources' >
+                {/* <Route exact path="/EffyBuy/ppts" ><div className="knowledge_source_main_div"><PPT/></div></Route> */}
+                <Route exact path="/ppts" >
+                <div className="knowledge_source_main_div">
+                    <div className='title-style-seven text-center'>
+                        <h1 >
+                            Presentations
+                        </h1>
+                    </div>        
+                    <PPT/>
+                </div>
+            </Route>
+            </Switch>
+
+            <Switch>
+                {/* <Route exact path="/EffyBuy/resources/caseStudy" ><div className="knowledge_source_main_div"><CaseStudy/></div></Route> */}
+                <Route exact path="/casestudy" >
+                <div className="knowledge_source_main_div">
+                    <div className='title-style-seven text-center'>
+                        <h1 >
+                            Case Study
+                        </h1>
+                    </div>  
+                    <CaseStudy/>
+                </div>
+            </Route>
+            </Switch>
+
+            <Switch>
+                <Route exact path="/calc" component={PricingCalculator} />
+            </Switch>
+
+
+            <Switch>
+            <Route exact path='/resources' >
                 <KnowledgeSource location={location.pathname}/>
             </Route>
             </Switch>
             <Switch>
-            <Route exact key="ebook" path='/EffyBuy/resources/blog' >
+            <Route exact key="ebook" path='/resources/blog' >
                 <KnowledgeSource location={location.pathname}/>
             </Route>
             </Switch>
-            <Route exact key="ppt" path='/EffyBuy/resources/ppt'>
+            <Route exact key="ppt" path='/resources/ppt'>
                 <KnowledgeSource location={location.pathname}/>
             </Route>
-            <Route exact key="case_study" path='/EffyBuy/resources/case_studies' >
+            <Route exact key="case_study" path='/resources/case_studies' >
                 <KnowledgeSource location={location.pathname}/>
             </Route>
-            <Route exact key="white_paper" path='/EffyBuy/resources/webinar' >
+            <Route exact key="white_paper" path='/resources/webinar' >
                 <KnowledgeSource location={location.pathname}/>
             </Route>
 
-            <Route exact path='/EffyBuy/pricing/effybuy' component={PricingPage}></Route>
+            <Route exact path='/pricing' component={PricingPage}></Route>
 
             
 
             <Switch>
-                <Route exact path="/EffyBuy/privacyPolicy" component={PrivacyPolicy} />
+                <Route exact path="/privacyPolicy" component={PrivacyPolicy} />
             </Switch>
             <Switch>
-                <Route exact path="/EffyBuy/TermsAndConditions" component={TermsAndConditions} />
+                <Route exact path="/TermsAndConditions" component={TermsAndConditions} />
             </Switch>
             <Switch>
                 <Route exact path="/EffyBuy/about_us" component={AboutUs} />
