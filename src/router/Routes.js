@@ -172,9 +172,9 @@ const Routes = () => {
                 <Route path="/" component={Footer} />
             </Switch>
             
-            {/* <Switch>
+            <Switch>
                 <Redirect to="/EffyBuy/404"  />
-            </Switch> */}
+            </Switch>
             
 
         {/* <Switch>
