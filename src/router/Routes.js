@@ -52,7 +52,7 @@ const Routes = () => {
                 <Route exact path="/" component={HomePageContent} />
             </Switch>
             <Switch>
-                <Route exact path="/Effybuy" component={HomePageContent} />
+                <Route exact path="/EffyBuy" component={HomePageContent} />
             </Switch>
             <Switch>
                 <Redirect to="/EffyBuy/404"  />
