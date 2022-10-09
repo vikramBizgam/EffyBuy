@@ -54,9 +54,9 @@ const Routes = () => {
             <Switch>
                 <Route exact path="/EffyBuy" component={HomePageContent} />
             </Switch>
-            <Switch>
+            {/* <Switch>
                 <Redirect to="/EffyBuy/404"  />
-            </Switch>
+            </Switch> */}
             <Switch>
                 <Route exact path="/EffyBuy/EffySell" component={EffySell} />
             </Switch>
