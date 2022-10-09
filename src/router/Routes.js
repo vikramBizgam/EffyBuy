@@ -152,9 +152,9 @@ const Routes = () => {
 
             <Route exact path='/EffyBuy/pricing/effybuy' component={PricingPage}></Route>
 
-            {/* <Switch>
+            <Switch>
                 <Route exact path="/EffyBuy/404" component={NotFound} />
-            </Switch> */}
+            </Switch>
 
             <Switch>
                 <Route exact path="/EffyBuy/privacyPolicy" component={PrivacyPolicy} />
