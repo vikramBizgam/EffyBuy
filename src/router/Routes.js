@@ -118,7 +118,7 @@ const Routes = () => {
 
 
             <Switch>
-                <Route exact path="/EffyBuy/resources/ppts" ><div className="knowledge_source_main_div"><PPT/></div></Route>
+                <Route exact path="/EffyBuy/ppts" ><div className="knowledge_source_main_div"><PPT/></div></Route>
             </Switch>
 
             <Switch>
