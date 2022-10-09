@@ -28,7 +28,7 @@ const Header = () => {
       >
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo">
-            <Link to="/EffyBuy">
+            <Link to="/EffyBuyy">
               <img src={effybuy_logo_with_name} alt="EffyBuy Logo" />
             </Link>
           </div>
