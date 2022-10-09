@@ -152,9 +152,7 @@ const Routes = () => {
 
             <Route exact path='/EffyBuy/pricing/effybuy' component={PricingPage}></Route>
 
-            <Switch>
-                <Route exact path="/EffyBuy/404" component={NotFound} />
-            </Switch>
+            
 
             <Switch>
                 <Route exact path="/EffyBuy/privacyPolicy" component={PrivacyPolicy} />
@@ -171,10 +169,14 @@ const Routes = () => {
             <Switch>
                 <Route path="/" component={Footer} />
             </Switch>
+
+            {/* <Switch>
+                <Route exact path="/EffyBuy/404" component={NotFound} />
+            </Switch>
             
             <Switch>
                 <Redirect to="/EffyBuy/404"  />
-            </Switch>
+            </Switch> */}
             
 
         {/* <Switch>
